@@ -299,9 +299,7 @@
   outline: none;
   display: block;
   width: 170px;
-  height: 53px;
   border: none;
-  box-shadow: inset 0 -3px 0 #736357;
   border-radius: 3px;
   background-color: #998675;
   text-decoration: none;
@@ -312,6 +310,7 @@
   font-weight: 400;
   color: white;
   text-transform: uppercase;
+  box-shadow: inset 0 -3px 0 #736357;
 }
 
 .header .carousel .carousel-item .slaider-botton:hover {
@@ -650,9 +649,7 @@
   outline: none;
   display: block;
   width: 170px;
-  height: 50px;
   border: none;
-  box-shadow: inset 0 -3px 0 #736357;
   border-radius: 3px;
   background-color: #998675;
   text-decoration: none;
@@ -663,6 +660,7 @@
   font-weight: 400;
   color: white;
   text-transform: uppercase;
+  box-shadow: inset 0 -3px 0 #736357;
 }
 
 .Purchase-Now .button-Purchase-Now:hover {
@@ -673,4 +671,221 @@
 .Purchase-Now .button-Purchase-Now:active {
   background-color: #0a0603;
   box-shadow: inset 0 -3px 0 #0a0603;
+}
+
+.Purchase-Now .button-Purchase-Now::after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+.Our-Latest-Projects {
+  text-align: center;
+  padding: 81px 374px 80px 376px;
+  display: flex;
+  flex-direction: column;
+}
+
+.h2-Our-Latest-Projects {
+  margin: 0 auto;
+  width: 300px;
+  font-family: "Raleway-SemiBold";
+  font-size: 30px;
+  font-weight: 400;
+  color: #555555;
+}
+
+.p-Our-Latest-Projects {
+  margin: 0 auto;
+  margin-top: 24px;
+  width: 790px;
+  line-height: 28px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 300;
+  color: #8c8c8c;
+}
+
+.nav-Our-Latest-Projects {
+  display: flex;
+  width: 608px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  margin-top: 30px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects {
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(1) {
+  outline: none;
+  display: block;
+  width: 70px;
+  border: none;
+  border-radius: 3px;
+  background-color: #998675;
+  text-decoration: none;
+  text-align: center;
+  line-height: 32px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 300;
+  color: #8c8c8c;
+  text-transform: uppercase;
+  background-color: white;
+  border: 1px solid #ebebeb;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(1):hover {
+  background-color: #998675;
+  box-shadow: inset 0 -3px 0 #998675;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(1):active {
+  background-color: #422107;
+  box-shadow: inset 0 -3px 0 #422107;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(2) {
+  outline: none;
+  display: block;
+  width: 120px;
+  border: none;
+  border-radius: 3px;
+  background-color: #998675;
+  text-decoration: none;
+  text-align: center;
+  line-height: 32px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 300;
+  color: #8c8c8c;
+  text-transform: uppercase;
+  background-color: white;
+  border: 1px solid #ebebeb;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(2):hover {
+  background-color: #998675;
+  box-shadow: inset 0 -3px 0 #998675;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(2):active {
+  background-color: #422107;
+  box-shadow: inset 0 -3px 0 #422107;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(3) {
+  outline: none;
+  display: block;
+  width: 120px;
+  border: none;
+  border-radius: 3px;
+  background-color: #998675;
+  text-decoration: none;
+  text-align: center;
+  line-height: 32px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 300;
+  color: #8c8c8c;
+  text-transform: uppercase;
+  background-color: white;
+  border: 1px solid #ebebeb;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(3):hover {
+  background-color: #998675;
+  box-shadow: inset 0 -3px 0 #998675;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(3):active {
+  background-color: #422107;
+  box-shadow: inset 0 -3px 0 #422107;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(4) {
+  outline: none;
+  display: block;
+  width: 120px;
+  border: none;
+  border-radius: 3px;
+  background-color: #998675;
+  text-decoration: none;
+  text-align: center;
+  line-height: 32px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 300;
+  color: #8c8c8c;
+  text-transform: uppercase;
+  background-color: white;
+  border: 1px solid #ebebeb;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(4):hover {
+  background-color: #998675;
+  box-shadow: inset 0 -3px 0 #998675;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(4):active {
+  background-color: #422107;
+  box-shadow: inset 0 -3px 0 #422107;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(5) {
+  outline: none;
+  display: block;
+  width: 135px;
+  border: none;
+  border-radius: 3px;
+  background-color: #998675;
+  text-decoration: none;
+  text-align: center;
+  line-height: 32px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 300;
+  color: #8c8c8c;
+  text-transform: uppercase;
+  background-color: white;
+  border: 1px solid #ebebeb;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(5):hover {
+  background-color: #998675;
+  box-shadow: inset 0 -3px 0 #998675;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(5):active {
+  background-color: #422107;
+  box-shadow: inset 0 -3px 0 #422107;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:hover {
+  color: white;
+}
+
+.rov1-Our-Latest-Projects {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.rov1-Our-Latest-Projects .figure-Our-Latest-Projects {
+  width: 370px;
+}
+
+.rov1-Our-Latest-Projects .img-Our-Latest-Prodjects {
+  display: inline-block;
+}
+
+.rov1-Our-Latest-Projects .figcaption-Our-Latest-Projects {
+  display: inline-block;
+  text-align-last: left;
+  width: 370px;
 }
