@@ -414,7 +414,7 @@
   height: 73px;
   background: url(../img/right.svg) no-repeat;
   margin-top: -56px;
-  margin-left: -13px;
+  margin-left: -48px;
 }
 
 .header .carousel .carousel-indicators {
@@ -505,7 +505,7 @@
 
 .cont-help .help .icon4 {
   position: absolute;
-  right: 104px;
+  right: 89px;
   top: 22px;
   width: 52px;
   height: 36px;
@@ -525,7 +525,7 @@
   width: 269px;
   line-height: 24px;
   margin-top: 14px;
-  margin-bottom: 31px;
+  margin-bottom: 28px;
   font-family: "Montserrat";
   font-size: 14px;
   font-weight: 300;
@@ -569,13 +569,14 @@
   background-color: #fbfaf8;
   flex-direction: column;
   justify-content: space-between;
-  padding: 83px 575px 0 576px;
+  padding: 77px 575px 0 576px;
   box-sizing: border-box;
   z-index: 5;
 }
 
 .Waxom-is-ealization .h2-Waxom-is-Realization {
   text-align: center;
+  width: 769px;
   font-family: "Raleway-ExtraBold";
   font-size: 30px;
   font-weight: 400;
@@ -583,9 +584,10 @@
 }
 
 .Waxom-is-ealization .p2-Waxom-is-Realization {
-  margin-top: 24px;
+  margin-top: 15px;
   text-align: center;
   width: 769px;
+  line-height: 28px;
   font-family: "Montserrat";
   font-size: 16px;
   font-weight: 300;
@@ -593,7 +595,7 @@
 }
 
 .Waxom-is-ealization .imgcenter {
-  margin-top: 40px;
+  margin-top: 36px;
   z-index: 20;
 }
 
@@ -607,4 +609,68 @@
   position: absolute;
   bottom: 0px;
   right: 340px;
+}
+
+.Purchase-Now {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 41px 358px 49px 376px;
+  background-color: #f4f5f8;
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+}
+
+.Purchase-Now .Purchase-Now-cont-next {
+  width: 545px;
+}
+
+.Purchase-Now .Purchase-Now-cont-next .text-brown {
+  font-family: "Raleway regular";
+  font-size: 28px;
+  font-weight: 400;
+  color: #c7b299;
+}
+
+.Purchase-Now .Purchase-Now-cont-next .text-white {
+  font-family: "Raleway regular";
+  font-size: 28px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.Purchase-Now .Purchase-Now-cont-next .p-Purchase-Now {
+  margin-top: 5px;
+  font-family: "Montserrat";
+  font-size: 18px;
+  font-weight: 300;
+  color: #615855;
+}
+
+.Purchase-Now .button-Purchase-Now {
+  outline: none;
+  display: block;
+  width: 170px;
+  height: 50px;
+  border: none;
+  box-shadow: inset 0 -3px 0 #736357;
+  border-radius: 3px;
+  background-color: #998675;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  font-family: "Raleway-ExtraBold";
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+}
+
+.Purchase-Now .button-Purchase-Now:hover {
+  background-color: #502a09;
+  box-shadow: inset 0 -3px 0 #502a09;
+}
+
+.Purchase-Now .button-Purchase-Now:active {
+  background-color: #0a0603;
+  box-shadow: inset 0 -3px 0 #0a0603;
 }

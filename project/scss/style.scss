@@ -95,9 +95,11 @@ $rsb: "Raleway-SemiBold";
 // bootstrap mixin for carousel
 @mixin transition($transition...) {
   @if $enable-transitions {
-    @if length($transition) ==0 {
+    @if length($transition)==0 {
       transition: $transition-base;
-    } @else {
+    }
+
+    @else {
       transition: $transition;
     }
   }
@@ -111,6 +113,40 @@ $rsb: "Raleway-SemiBold";
   }
 }
 
+@mixin button($width, $height, $size, $wi, $color, $family) {
+  outline: none;
+  display: block;
+  width: $width;
+  height: $height;
+  border: none;
+  box-shadow: inset 0 -3px 0 #736357;
+  border-radius: 3px;
+  background-color: #998675;
+  text-decoration: none;
+  text-align: center;
+  line-height: $height;
+  font-family: $family;
+  font-size: $size;
+  font-weight: $wi;
+  color: $color;
+  text-transform: uppercase;
+
+  &:hover {
+    background-color: #502a09;
+    box-shadow: inset 0 -3px 0 #502a09;
+  }
+
+  &:active {
+    background-color: #0a0603;
+    box-shadow: inset 0 -3px 0 #0a0603;
+  }
+
+}
+
+
+
+
+
 // start code**************************************
 * {
   margin: 0;
@@ -123,7 +159,7 @@ $rsb: "Raleway-SemiBold";
   max-width: $max;
   min-width: $min;
   box-sizing: content-box;
-   @include clearfix();
+  @include clearfix();
 }
 
 // header********************************************
@@ -255,6 +291,7 @@ $rsb: "Raleway-SemiBold";
       border: none;
       outline: none;
       @include textt(14px, 400, white, $rr);
+
       @include placeholder {
         color: rgba($color: #000000, $alpha: 0);
       }
@@ -331,29 +368,7 @@ $rsb: "Raleway-SemiBold";
       .slaider-botton {
         margin: 0 auto;
         margin-top: 48px;
-        outline: none;
-        display: block;
-        width: 170px;
-        height: 53px;
-        border: none;
-        box-shadow: inset 0 -3px 0 #736357;
-        border-radius: 3px;
-        background-color: #998675;
-        text-decoration: none;
-        text-align: center;
-        line-height: 53px;
-        @include textt(14px, 400, white, $reb);
-        text-transform: uppercase;
-      }
-
-      .slaider-botton:hover {
-        background-color: #502a09;
-        box-shadow: inset 0 -3px 0 #502a09;
-      }
-
-      .slaider-botton:active {
-        background-color: #0a0603;
-        box-shadow: inset 0 -3px 0 #0a0603;
+        @include button(170px, 53px, 14px, 400, white, $reb);
       }
     }
 
@@ -458,7 +473,7 @@ $rsb: "Raleway-SemiBold";
       height: 73px;
       background: url(../img/right.svg) no-repeat;
       margin-top: -56px;
-      margin-left: -13px;
+      margin-left: -48px;
     }
 
     .carousel-indicators {
@@ -504,7 +519,10 @@ $rsb: "Raleway-SemiBold";
     @include clearfix();
   }
 }
-.main {width: inherit;}
+
+.main {
+  width: inherit;
+}
 
 .cont-help {
   padding: 71px 376px 79px 378px;
@@ -548,7 +566,7 @@ $rsb: "Raleway-SemiBold";
 
     .icon4 {
       position: absolute;
-      right: 104px;
+      right: 89px;
       top: 22px;
       width: 52px;
       height: 36px;
@@ -565,7 +583,7 @@ $rsb: "Raleway-SemiBold";
       width: 269px;
       line-height: 24px;
       margin-top: 14px;
-      margin-bottom: 31px;
+      margin-bottom: 28px;
       @include textt(14px, 300, #555555, $mr);
     }
 
@@ -583,12 +601,15 @@ $rsb: "Raleway-SemiBold";
   .help:nth-child(1):hover .icon1 {
     background: url(../img/icon-pensel-oreng.jpg) no-repeat;
   }
+
   .help:nth-child(2):hover .icon2 {
     background: url(../img/booffer-oreng.jpg) no-repeat;
   }
+
   .help:nth-child(3):hover .icon3 {
     background: url(../img/koleso-oreng.jpg) no-repeat;
   }
+
   .help:nth-child(4):hover .icon4 {
     background: url(../img/folder-oreng.jpg) no-repeat;
   }
@@ -605,25 +626,29 @@ $rsb: "Raleway-SemiBold";
   background-color: #fbfaf8;
   flex-direction: column;
   justify-content: space-between;
-  padding: 83px 575px 0 576px;
+  padding: 77px 575px 0 576px;
   box-sizing: border-box;
   z-index: 5;
 
   .h2-Waxom-is-Realization {
     text-align: center;
+    width: 769px;
     @include textt(30px, 400, #555555, $reb);
   }
 
   .p2-Waxom-is-Realization {
-    margin-top: 24px;
+    margin-top: 15px;
     text-align: center;
     width: 769px;
+    line-height: 28px;
     @include textt(16px, 300, #8c8c8c, $mr);
   }
+
   .imgcenter {
-    margin-top: 40px;
+    margin-top: 36px;
     z-index: 20;
   }
+
   .imgleft {
     position: absolute;
     bottom: 0px;
@@ -634,5 +659,35 @@ $rsb: "Raleway-SemiBold";
     position: absolute;
     bottom: 0px;
     right: 340px;
+  }
+}
+
+.Purchase-Now {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 41px 358px 49px 376px;
+  background-color: #f4f5f8;
+  background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+
+  .Purchase-Now-cont-next {
+    width: 545px;
+
+    .text-brown {
+      @include textt(28px, 400, #c7b299, $rr)
+    }
+
+    .text-white {
+      @include textt(28px, 400, #ffffff, $rr)
+    }
+
+    .p-Purchase-Now {
+      margin-top: 5px;
+      @include textt(18px, 300, #615855, $mr)
+    }
+  }
+
+  .button-Purchase-Now {
+    @include button(170px, 50px, 14px, 400, white, $reb);
   }
 }
