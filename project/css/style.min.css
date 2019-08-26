@@ -29,9 +29,17 @@
 }
 
 .contener {
-  margin: 0 auto;
-  border: 1px solid gray;
-  width: 1920px;
+  margin: 20px auto;
+  width: auto;
+  max-width: 1920px;
+  min-width: 1400px;
+  box-sizing: content-box;
+}
+
+.contener::after {
+  display: block;
+  clear: both;
+  content: "";
 }
 
 .header {
@@ -43,7 +51,7 @@
 }
 
 .header .logo-nav-sersh {
-  padding: 0 163px 0 374px;
+  padding: 0 236px 0 374px;
   box-sizing: border-box;
   width: 100%;
   height: 58px;
@@ -69,10 +77,11 @@
 
 .header .logo-nav-sersh .nav-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
   height: 58px;
-  width: 719px;
+  width: 1035px;
   margin-top: -1px;
   margin-left: 219px;
 }
@@ -122,8 +131,7 @@
   color: #b31c35;
 }
 
-.header .logo-nav-sersh .nav-header::after {
-  content: "";
+.header .logo-nav-sersh .icon_cart {
   display: block;
   background: url(../img/icon-cart.svg) no-repeat;
   width: 18px;
@@ -164,7 +172,7 @@
   padding: 5px;
   background-color: rgba(0, 0, 0, 0);
   height: 24px;
-  width: 200px;
+  width: 100px;
   border: none;
   outline: none;
   font-family: "Raleway regular";
@@ -199,7 +207,7 @@
 .header .logo-nav-sersh .form-search:hover .search-header,
 .header .logo-nav-sersh .form-search:focus .search-header {
   height: 24px;
-  width: 200px;
+  width: 100px;
   outline: none;
   border: 1px solid white;
   border-left: none;
@@ -406,7 +414,7 @@
   height: 73px;
   background: url(../img/right.svg) no-repeat;
   margin-top: -56px;
-  margin-left: -48px;
+  margin-left: -13px;
 }
 
 .header .carousel .carousel-indicators {
@@ -449,6 +457,10 @@
   content: "";
 }
 
+.main {
+  width: inherit;
+}
+
 .cont-help {
   padding: 71px 376px 79px 378px;
   display: flex;
@@ -458,6 +470,7 @@
 .cont-help .help {
   display: block;
   width: 270px;
+  height: inherit;
   text-align: center;
   position: relative;
 }
@@ -547,4 +560,51 @@
 
 .cont-help .help:hover .p-help::after {
   border-top: 3px solid #c7b299;
+}
+
+.Waxom-is-ealization {
+  width: inherit;
+  display: flex;
+  position: relative;
+  background-color: #fbfaf8;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 83px 575px 0 576px;
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+.Waxom-is-ealization .h2-Waxom-is-Realization {
+  text-align: center;
+  font-family: "Raleway-ExtraBold";
+  font-size: 30px;
+  font-weight: 400;
+  color: #555555;
+}
+
+.Waxom-is-ealization .p2-Waxom-is-Realization {
+  margin-top: 24px;
+  text-align: center;
+  width: 769px;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 300;
+  color: #8c8c8c;
+}
+
+.Waxom-is-ealization .imgcenter {
+  margin-top: 40px;
+  z-index: 20;
+}
+
+.Waxom-is-ealization .imgleft {
+  position: absolute;
+  bottom: 0px;
+  left: 345px;
+}
+
+.Waxom-is-ealization .imgright {
+  position: absolute;
+  bottom: 0px;
+  right: 340px;
 }
