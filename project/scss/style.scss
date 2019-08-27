@@ -1,150 +1,10 @@
-@font-face {
-  font-family: "Montserrat";
-  src: url(../font/Montserrat/Montserrat-Light.ttf);
-}
+@import 'fonts';
 
-@font-face {
-  font-family: "Raleway regular";
-  src: url(../font/Raleway/Raleway-Regular.ttf);
-}
+@import 'varcour';
 
-@font-face {
-  font-family: "Raleway medium";
-  src: url(../font/Raleway/Raleway-Medium.ttf);
-}
+@import 'myvar';
 
-@font-face {
-  font-family: "Raleway-ExtraBold";
-  src: url(../font/Raleway/Raleway-ExtraBold.ttf);
-}
-
-@font-face {
-  font-family: "Raleway-SemiBold";
-  src: url(../font/Raleway/Raleway-SemiBold.ttf);
-}
-
-// Carousel bootstrap
-$carousel-control-color: white;
-$carousel-control-width: 15%;
-$carousel-control-opacity: 0.5;
-$carousel-control-hover-opacity: 0.9;
-$carousel-control-transition: opacity 0.15s ease;
-
-$carousel-indicator-width: 30px;
-$carousel-indicator-height: 3px;
-$carousel-indicator-hit-area-height: 10px;
-$carousel-indicator-spacer: 3px;
-$carousel-indicator-active-bg: white;
-$carousel-indicator-transition: opacity 0.6s ease;
-
-$carousel-caption-width: 70%;
-$carousel-caption-color: white;
-
-$carousel-control-icon-width: 20px;
-
-$carousel-control-prev-icon-bg: url("../img/left.svg");
-$carousel-control-next-icon-bg: url("../img/right.svg");
-
-$carousel-transition-duration: 0.6s;
-$carousel-transition: transform $carousel-transition-duration ease-in-out;
-
-$enable-transitions: true;
-$enable-gradients: false;
-
-//my variabls ****************************************
-$max: 1920px;
-$min: 1400px;
-$mr: "Montserrat";
-$rr: "Raleway regular";
-$rm: "Raleway medium";
-$reb: "Raleway-ExtraBold";
-$rsb: "Raleway-SemiBold";
-
-// my mixin ******************************************
-@mixin textt($size, $wi, $color, $family) {
-  font-family: $family;
-  font-size: $size;
-  font-weight: $wi;
-  color: $color;
-}
-
-@mixin placeholder {
-  &::-webkit-input-placeholder {
-    @content;
-  }
-
-  &:-moz-placeholder {
-    @content;
-  }
-
-  &::-moz-placeholder {
-    @content;
-  }
-
-  &:-ms-input-placeholder {
-    @content;
-  }
-}
-
-@mixin clearfix() {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-// bootstrap mixin for carousel
-@mixin transition($transition...) {
-  @if $enable-transitions {
-    @if length($transition)==0 {
-      transition: $transition-base;
-    }
-
-    @else {
-      transition: $transition;
-    }
-  }
-}
-
-@mixin clearfix() {
-  &::after {
-    display: block;
-    clear: both;
-    content: "";
-  }
-}
-
-@mixin button($width, $height, $size, $wi, $color, $family, $colorhover, $coloractiv) {
-  outline: none;
-  display: block;
-  width: $width;
-  border: none;
-  border-radius: 3px;
-  background-color: #998675;
-  text-decoration: none;
-  text-align: center;
-  line-height: $height;
-  font-family: $family;
-  font-size: $size;
-  font-weight: $wi;
-  color: $color;
-  text-transform: uppercase;
-
-  &:hover {
-    background-color: $colorhover;
-    box-shadow: inset 0 -3px 0 $colorhover;
-  }
-
-  &:active {
-    background-color: $coloractiv;
-    box-shadow: inset 0 -3px 0 $coloractiv;
-  }
-}
-
-// start code**************************************
-* {
-  margin: 0;
-  padding: 0;
-}
+@import 'mixin';
 
 .contener {
   margin: 20px auto;
@@ -155,364 +15,7 @@ $rsb: "Raleway-SemiBold";
   @include clearfix();
 }
 
-// header********************************************
-// header********************************************
-// header********************************************
-.header {
-  width: 100%;
-  background-image: url("../img/fon_header.jpg");
-  background-size: cover;
-  padding-top: 40px;
-  padding-bottom: 40px;
-
-  .logo-nav-sersh {
-    padding: 0 236px 0 374px;
-    box-sizing: border-box;
-    width: 100%;
-    height: 58px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-
-    .img-logo {
-      display: inline-block;
-    }
-
-    .text-logo {
-      display: inline-block;
-      color: #ffffff;
-      letter-spacing: -1.36px;
-      @include textt(34px, 400, white, $rr);
-      margin-left: 3px;
-    }
-
-    .nav-header {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      align-items: center;
-      height: 58px;
-      width: 1035px;
-      margin-top: -1px;
-      margin-left: 219px;
-
-      .a-nav-header {
-        display: inline-block;
-        @include textt(14px, 400, white, $mr);
-        text-decoration: none;
-      }
-
-      .a-nav-header:nth-of-type(2) {
-        margin-left: 29px;
-      }
-
-      .a-nav-header:nth-of-type(3) {
-        margin-left: 28px;
-      }
-
-      .a-nav-header:nth-of-type(4) {
-        margin-left: 28px;
-      }
-
-      .a-nav-header:nth-of-type(5) {
-        margin-left: 26px;
-      }
-
-      .a-nav-header:nth-of-type(6) {
-        margin-left: 28px;
-      }
-
-      .a-nav-header:nth-of-type(7) {
-        margin-left: 28px;
-      }
-
-      .a-nav-header:nth-of-type(8) {
-        margin-left: 29px;
-      }
-
-      .a-nav-header:hover {
-        color: orange;
-      }
-
-      .a-nav-header:active {
-        color: rgb(179, 28, 53);
-      }
-    }
-
-    .icon_cart {
-      display: block;
-      background: url(../img/icon-cart.svg) no-repeat;
-      width: 18px;
-      height: 24px;
-      margin-left: 63px;
-    }
-
-    .form-search:hover .serch-button-header {
-      background-color: rgb(66, 60, 60);
-      border: 1px solid white;
-    }
-
-    .form-search:active .serch-button-header {
-      background-color: rgb(59, 55, 55);
-      border: 1px solid orange;
-    }
-
-    .form-search {
-      margin-top: 0;
-    }
-
-    .serch-button-header {
-      display: inline-block;
-      float: left;
-      margin-left: 28px;
-      width: 24px;
-      height: 24px;
-      background: url(../img/icon-search.svg) no-repeat;
-      background-size: cover;
-      border: none;
-      outline: none;
-      font-size: 0;
-    }
-
-    .search-header {
-      float: left;
-      display: inline-block;
-      padding: 5px;
-      background-color: rgba($color: #000000, $alpha: 0);
-      height: 24px;
-      width: 100px;
-      border: none;
-      outline: none;
-      @include textt(14px, 400, white, $rr);
-
-      @include placeholder {
-        color: rgba($color: #000000, $alpha: 0);
-      }
-    }
-
-    input::-webkit-search-decoration,
-    input::-webkit-search-cancel-button,
-    input::-webkit-search-results-button,
-    input::-webkit-search-results-decoration {
-      display: none;
-    }
-
-    .form-search:hover .search-header,
-    .form-search:focus .search-header {
-      height: 24px;
-      width: 100px;
-      outline: none;
-      border: 1px solid white;
-      border-left: none;
-      background-color: rgb(66, 60, 60);
-      @include textt(14px, 400, white, $rr);
-
-      @include placeholder {
-        color: white;
-      }
-    }
-  }
-
-  // carousel start**************************************************************
-  .carousel {
-    padding: 278px 147px 344px 147px;
-    position: relative;
-
-    .carousel-item {
-      width: 100%;
-      position: relative;
-      display: none;
-      float: left;
-      width: 100%;
-      margin-right: -100%;
-      backface-visibility: hidden;
-      @include transition($carousel-transition);
-
-      .slaider-top {
-        display: block;
-        margin: 0 auto;
-        padding: 0;
-        width: 568px;
-        text-align: center;
-        @include textt(36px, 500, white, $rm);
-        line-height: 36px;
-      }
-
-      .h1-slaider {
-        padding: 0;
-        margin: 0 auto;
-        width: 768px;
-        margin-top: 12px;
-        text-align: center;
-        @include textt(52px, 800, white, $reb);
-        line-height: 52px;
-      }
-
-      .slader-text {
-        margin: 0 auto;
-        padding: 0;
-        margin-top: 16px;
-        width: 568px;
-        text-align: center;
-        line-height: 24px;
-        @include textt(16px, 300, white, $mr);
-      }
-
-      .slaider-botton {
-        margin: 0 auto;
-        margin-top: 48px;
-        @include button(170px, 53px, 14px, 400, white, $reb, #502a09, #0a0603);
-        box-shadow: inset 0 -3px 0 #736357;
-      }
-    }
-
-    .carousel-item.active,
-    .carousel-item-next,
-    .carousel-item-prev {
-      display: block;
-    }
-
-    .carousel-item-next:not(.carousel-item-left),
-    .active.carousel-item-right {
-      transform: translateX(100%);
-    }
-
-    .carousel-item-prev:not(.carousel-item-right),
-    .active.carousel-item-left {
-      transform: translateX(-100%);
-    }
-
-    .carousel-fade {
-      .carousel-item {
-        opacity: 0;
-        transition-property: opacity;
-        transform: none;
-      }
-
-      .carousel-item.active,
-      .carousel-item-next.carousel-item-left,
-      .carousel-item-prev.carousel-item-right {
-        z-index: 1;
-        opacity: 1;
-      }
-
-      .active.carousel-item-left,
-      .active.carousel-item-right {
-        z-index: 0;
-        opacity: 0;
-        @include transition(opacity 0s $carousel-transition-duration);
-      }
-    }
-
-    .carousel-control-prev,
-    .carousel-control-next {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      z-index: 1;
-      // Use flex for alignment (1-3)
-      display: flex; // 1. allow flex styles
-      align-items: center; // 2. vertically center contents
-      justify-content: center; // 3. horizontally center contents
-      width: $carousel-control-width;
-      color: $carousel-control-color;
-      text-align: center;
-      opacity: $carousel-control-opacity;
-      @include transition($carousel-control-transition);
-
-      // Hover/focus state
-      &:hover,
-      &:focus {
-        color: $carousel-control-color;
-        text-decoration: none;
-        outline: 0;
-        opacity: $carousel-control-hover-opacity;
-      }
-    }
-
-    .carousel-control-prev {
-      left: 0;
-
-      @if $enable-gradients {
-        background-image: linear-gradient(90deg, rgba($black, 0.25), rgba($black, 0.001));
-      }
-    }
-
-    .carousel-control-next {
-      right: 0;
-
-      @if $enable-gradients {
-        background-image: linear-gradient(270deg, rgba($black, 0.25), rgba($black, 0.001));
-      }
-    }
-
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
-      display: inline-block;
-      width: $carousel-control-icon-width;
-      height: $carousel-control-icon-width;
-      background: no-repeat 50% / 100% 100%;
-    }
-
-    .carousel-control-prev-icon {
-      width: 48px;
-      height: 73px;
-      background: url(../img/left.svg) no-repeat;
-      margin-top: -56px;
-      margin-left: 56px;
-    }
-
-    .carousel-control-next-icon {
-      width: 48px;
-      height: 73px;
-      background: url(../img/right.svg) no-repeat;
-      margin-top: -56px;
-      margin-left: -48px;
-    }
-
-    .carousel-indicators {
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      left: 0;
-      z-index: 15;
-      display: flex;
-      justify-content: center;
-      padding-left: 0; // override <ol> default
-      // Use the .carousel-control's width as margin so we don't overlay those
-      margin-right: $carousel-control-width;
-      margin-left: $carousel-control-width;
-      list-style: none;
-
-      li {
-        box-sizing: border-box;
-        flex: 0 1 auto;
-        width: 15px;
-        height: 15px;
-        margin-right: 6.7px;
-        margin-left: 0;
-        border-radius: 50%;
-        border: none;
-        background: url(../img/01.svg) no-repeat;
-        background-position: center;
-        cursor: pointer;
-        // Use transparent borders to increase the hit area by 10px on top and bottom.
-        @include transition($carousel-indicator-transition);
-      }
-
-      .active {
-        border: 2px solid #d3c1ad;
-        background-image: none;
-      }
-    }
-
-    //end caroesel****************************************************************
-  }
-
-  .carousel {
-    @include clearfix();
-  }
-}
+@import 'header';
 
 .main {
   width: inherit;
@@ -668,21 +171,21 @@ $rsb: "Raleway-SemiBold";
     width: 545px;
 
     .text-brown {
-      @include textt(28px, 400, #c7b299, $rr)
+      @include textt(28px, 400, #c7b299, $rr);
     }
 
     .text-white {
-      @include textt(28px, 400, #ffffff, $rr)
+      @include textt(28px, 400, #ffffff, $rr);
     }
 
     .p-Purchase-Now {
       margin-top: 5px;
-      @include textt(18px, 300, #615855, $mr)
+      @include textt(18px, 300, #615855, $mr);
     }
   }
 
   .button-Purchase-Now {
-    @include button(170px, 50px, 14px, 400, white, $reb, #502a09, #0a0603);
+    //@include button(170px, 50px, 14px, 400, white, $reb, #502a09, #0a0603);
     box-shadow: inset 0 -3px 0 #736357;
     @include clearfix();
   }
@@ -725,31 +228,31 @@ $rsb: "Raleway-SemiBold";
   }
 
   .button-Our-Latest-Projects:nth-child(1) {
-    @include button(70px, 32px, 14px, 300, #8c8c8c, $mr, #998675, #422107);
+    //@include button(70px, 32px, 14px, 300, #8c8c8c, $mr, #998675, #422107);
     background-color: white;
     border: 1px solid #ebebeb;
   }
 
   .button-Our-Latest-Projects:nth-child(2) {
-    @include button(120px, 32px, 14px, 300, #8c8c8c, $mr, #998675, #422107);
+    // @include button(120px, 32px, 14px, 300, #8c8c8c, $mr, #998675, #422107);
     background-color: white;
     border: 1px solid #ebebeb;
   }
 
   .button-Our-Latest-Projects:nth-child(3) {
-    @include button(120px, 32px, 14px, 300, #8c8c8c, $mr, #998675, #422107);
+    //@include button(120px, 32px, 14px, 300, #8c8c8c, $mr, #998675, #422107);
     background-color: white;
     border: 1px solid #ebebeb;
   }
 
   .button-Our-Latest-Projects:nth-child(4) {
-    @include button(120px, 32px, 14px, 300, #8c8c8c, $mr, #998675, #422107);
+    //@include button(120px, 32px, 14px, 300, #8c8c8c, $mr, #998675, #422107);
     background-color: white;
     border: 1px solid #ebebeb;
   }
 
   .button-Our-Latest-Projects:nth-child(5) {
-    @include button(135px, 32px, 14px, 300, #8c8c8c, $mr, #998675, #422107);
+    // @include button(135px, 32px, 14px, 300, #8c8c8c, $mr, #998675, #422107);
     background-color: white;
     border: 1px solid #ebebeb;
   }
@@ -770,15 +273,11 @@ $rsb: "Raleway-SemiBold";
 
   .img-Our-Latest-Prodjects {
     display: inline-block;
-   
   }
 
   .figcaption-Our-Latest-Projects {
     display: inline-block;
     text-align-last: left;
     width: 370px;
-
   }
-
 }
-

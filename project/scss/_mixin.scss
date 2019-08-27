@@ -1,0 +1,86 @@
+// my mixin ******************************************
+@mixin clearfix() {
+    &::after {
+      display: block;
+      clear: both;
+      content: "";
+    }
+  }
+  
+  @mixin button($width, $border-radius, $background-color) {
+    display: flex;
+    align-items: center;
+    outline: none;
+    display: block;
+    width: $width;
+    border-radius: $border-radius;
+    background-color: $background-color;
+    text-decoration: none;
+  }
+  
+  @mixin hover-and-activ-color-an-back-color($colorhover, $back-colorhover, $coloractiv, $back-coloractiv) {
+    &:hover {
+      background-color: $back-colorhover;
+      color: $colorhover;
+    }
+    &:active {
+      background-color: $back-coloractiv;
+      color: $coloractiv;
+    }
+  }
+  
+  @mixin hover-and-activ-color($colorhover, $coloractiv) {
+    &:hover {
+      color: $colorhover;
+    }
+    &:active {
+      color: $coloractiv;
+    }
+  }
+  
+  @mixin hover-and-activ-fill($back-colorhover, $back-coloractiv) {
+    &:hover {
+      fill: $back-colorhover;
+    }
+  
+    &:active {
+      fill: $back-coloractiv;
+    }
+  }
+  
+  @mixin textt($size, $wi, $color, $family) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $wi;
+    color: $color;
+  }
+  
+  @mixin placeholder {
+    &::-webkit-input-placeholder {
+      @content;
+    }
+  
+    &:-moz-placeholder {
+      @content;
+    }
+  
+    &::-moz-placeholder {
+      @content;
+    }
+  
+    &:-ms-input-placeholder {
+      @content;
+    }
+  }
+  
+  
+  // bootstrap mixin for carousel
+  @mixin transition($transition...) {
+    @if $enable-transitions {
+      @if length($transition) ==0 {
+        transition: $transition-base;
+      } @else {
+        transition: $transition;
+      }
+    }
+  }
