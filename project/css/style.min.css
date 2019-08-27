@@ -23,11 +23,6 @@
   src: url(../font/Raleway/Raleway-SemiBold.ttf);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 .contener {
   margin: 20px auto;
   width: auto;
@@ -60,8 +55,17 @@
   align-items: center;
 }
 
+.header .logo-nav-sersh .a-logo {
+  display: block;
+  width: 214px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
 .header .logo-nav-sersh .img-logo {
   display: inline-block;
+  fill: white;
 }
 
 .header .logo-nav-sersh .text-logo {
@@ -72,7 +76,23 @@
   font-size: 34px;
   font-weight: 400;
   color: white;
-  margin-left: 3px;
+  margin-left: 0px;
+}
+
+.header .logo-nav-sersh .a-logo:hover .img-logo {
+  fill: #e4987c;
+}
+
+.header .logo-nav-sersh .a-logo:hover .text-logo {
+  color: #e4987c;
+}
+
+.header .logo-nav-sersh .a-logo:active .img-logo {
+  fill: #dd6337;
+}
+
+.header .logo-nav-sersh .a-logo:active .text-logo {
+  color: #dd6337;
 }
 
 .header .logo-nav-sersh .nav-header {
@@ -93,6 +113,14 @@
   font-weight: 400;
   color: white;
   text-decoration: none;
+}
+
+.header .logo-nav-sersh .nav-header .a-nav-header:hover {
+  color: #e4987c;
+}
+
+.header .logo-nav-sersh .nav-header .a-nav-header:active {
+  color: #e9531d;
 }
 
 .header .logo-nav-sersh .nav-header .a-nav-header:nth-of-type(2) {
@@ -123,20 +151,21 @@
   margin-left: 29px;
 }
 
-.header .logo-nav-sersh .nav-header .a-nav-header:hover {
-  color: orange;
-}
-
-.header .logo-nav-sersh .nav-header .a-nav-header:active {
-  color: #b31c35;
-}
-
 .header .logo-nav-sersh .icon_cart {
   display: block;
-  background: url(../img/icon-cart.svg) no-repeat;
-  width: 18px;
-  height: 24px;
-  margin-left: 63px;
+  border: none;
+  outline: none;
+  margin-left: 55px;
+  background-color: rgba(0, 0, 0, 0);
+  fill: white;
+}
+
+.header .logo-nav-sersh .icon_cart:hover {
+  fill: #e4987c;
+}
+
+.header .logo-nav-sersh .icon_cart:active {
+  fill: #e9531d;
 }
 
 .header .logo-nav-sersh .form-search:hover .serch-button-header {
@@ -150,7 +179,8 @@
 }
 
 .header .logo-nav-sersh .form-search {
-  margin-top: 0;
+  margin-top: -3px;
+  margin-left: -5px;
 }
 
 .header .logo-nav-sersh .serch-button-header {
@@ -296,31 +326,22 @@
 .header .carousel .carousel-item .slaider-botton {
   margin: 0 auto;
   margin-top: 48px;
+  height: 53px;
+  border: none;
+  display: flex;
+  align-items: center;
   outline: none;
   display: block;
   width: 170px;
-  border: none;
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: #998675;
   text-decoration: none;
-  text-align: center;
-  line-height: 53px;
   font-family: "Raleway-ExtraBold";
   font-size: 14px;
   font-weight: 400;
   color: white;
-  text-transform: uppercase;
   box-shadow: inset 0 -3px 0 #736357;
-}
-
-.header .carousel .carousel-item .slaider-botton:hover {
-  background-color: #502a09;
-  box-shadow: inset 0 -3px 0 #502a09;
-}
-
-.header .carousel .carousel-item .slaider-botton:active {
-  background-color: #0a0603;
-  box-shadow: inset 0 -3px 0 #0a0603;
+  text-transform: uppercase;
 }
 
 .header .carousel .carousel-item.active,
@@ -430,7 +451,7 @@
   list-style: none;
 }
 
-.header .carousel .carousel-indicators li {
+.header .carousel .carousel-indicators a {
   box-sizing: border-box;
   flex: 0 1 auto;
   width: 15px;
@@ -646,31 +667,7 @@
 }
 
 .Purchase-Now .button-Purchase-Now {
-  outline: none;
-  display: block;
-  width: 170px;
-  border: none;
-  border-radius: 3px;
-  background-color: #998675;
-  text-decoration: none;
-  text-align: center;
-  line-height: 50px;
-  font-family: "Raleway-ExtraBold";
-  font-size: 14px;
-  font-weight: 400;
-  color: white;
-  text-transform: uppercase;
   box-shadow: inset 0 -3px 0 #736357;
-}
-
-.Purchase-Now .button-Purchase-Now:hover {
-  background-color: #502a09;
-  box-shadow: inset 0 -3px 0 #502a09;
-}
-
-.Purchase-Now .button-Purchase-Now:active {
-  background-color: #0a0603;
-  box-shadow: inset 0 -3px 0 #0a0603;
 }
 
 .Purchase-Now .button-Purchase-Now::after {
@@ -722,148 +719,28 @@
 }
 
 .nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(1) {
-  outline: none;
-  display: block;
-  width: 70px;
-  border: none;
-  border-radius: 3px;
-  background-color: #998675;
-  text-decoration: none;
-  text-align: center;
-  line-height: 32px;
-  font-family: "Montserrat";
-  font-size: 14px;
-  font-weight: 300;
-  color: #8c8c8c;
-  text-transform: uppercase;
   background-color: white;
   border: 1px solid #ebebeb;
-}
-
-.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(1):hover {
-  background-color: #998675;
-  box-shadow: inset 0 -3px 0 #998675;
-}
-
-.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(1):active {
-  background-color: #422107;
-  box-shadow: inset 0 -3px 0 #422107;
 }
 
 .nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(2) {
-  outline: none;
-  display: block;
-  width: 120px;
-  border: none;
-  border-radius: 3px;
-  background-color: #998675;
-  text-decoration: none;
-  text-align: center;
-  line-height: 32px;
-  font-family: "Montserrat";
-  font-size: 14px;
-  font-weight: 300;
-  color: #8c8c8c;
-  text-transform: uppercase;
   background-color: white;
   border: 1px solid #ebebeb;
-}
-
-.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(2):hover {
-  background-color: #998675;
-  box-shadow: inset 0 -3px 0 #998675;
-}
-
-.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(2):active {
-  background-color: #422107;
-  box-shadow: inset 0 -3px 0 #422107;
 }
 
 .nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(3) {
-  outline: none;
-  display: block;
-  width: 120px;
-  border: none;
-  border-radius: 3px;
-  background-color: #998675;
-  text-decoration: none;
-  text-align: center;
-  line-height: 32px;
-  font-family: "Montserrat";
-  font-size: 14px;
-  font-weight: 300;
-  color: #8c8c8c;
-  text-transform: uppercase;
   background-color: white;
   border: 1px solid #ebebeb;
-}
-
-.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(3):hover {
-  background-color: #998675;
-  box-shadow: inset 0 -3px 0 #998675;
-}
-
-.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(3):active {
-  background-color: #422107;
-  box-shadow: inset 0 -3px 0 #422107;
 }
 
 .nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(4) {
-  outline: none;
-  display: block;
-  width: 120px;
-  border: none;
-  border-radius: 3px;
-  background-color: #998675;
-  text-decoration: none;
-  text-align: center;
-  line-height: 32px;
-  font-family: "Montserrat";
-  font-size: 14px;
-  font-weight: 300;
-  color: #8c8c8c;
-  text-transform: uppercase;
   background-color: white;
   border: 1px solid #ebebeb;
-}
-
-.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(4):hover {
-  background-color: #998675;
-  box-shadow: inset 0 -3px 0 #998675;
-}
-
-.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(4):active {
-  background-color: #422107;
-  box-shadow: inset 0 -3px 0 #422107;
 }
 
 .nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(5) {
-  outline: none;
-  display: block;
-  width: 135px;
-  border: none;
-  border-radius: 3px;
-  background-color: #998675;
-  text-decoration: none;
-  text-align: center;
-  line-height: 32px;
-  font-family: "Montserrat";
-  font-size: 14px;
-  font-weight: 300;
-  color: #8c8c8c;
-  text-transform: uppercase;
   background-color: white;
   border: 1px solid #ebebeb;
-}
-
-.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(5):hover {
-  background-color: #998675;
-  box-shadow: inset 0 -3px 0 #998675;
-}
-
-.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(5):active {
-  background-color: #422107;
-  box-shadow: inset 0 -3px 0 #422107;
 }
 
 .nav-Our-Latest-Projects .button-Our-Latest-Projects:hover {

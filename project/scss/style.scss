@@ -61,6 +61,55 @@ $reb: "Raleway-ExtraBold";
 $rsb: "Raleway-SemiBold";
 
 // my mixin ******************************************
+@mixin clearfix() {
+  &::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+}
+
+@mixin button($width, $border-radius, $background-color) {
+  display: flex;
+  align-items: center;
+  outline: none;
+  display: block;
+  width: $width;
+  border-radius: $border-radius;
+  background-color: $background-color;
+  text-decoration: none;
+}
+
+@mixin hover-and-activ-color-an-back-color($colorhover, $back-colorhover, $coloractiv, $back-coloractiv) {
+  &:hover {
+    background-color: $back-colorhover;
+    color: $colorhover;
+  }
+  &:active {
+    background-color: $back-coloractiv;
+    color: $coloractiv;
+  }
+}
+
+@mixin hover-and-activ-color($colorhover, $coloractiv) {
+  &:hover {
+    color: $colorhover;
+  }
+  &:active {
+    color: $coloractiv;
+  }
+}
+
+@mixin hover-and-activ-fill($back-colorhover, $back-coloractiv) {
+  &:hover {
+    fill: $back-colorhover;
+  }
+
+  &:active {
+    fill: $back-coloractiv;
+  }
+}
+
 @mixin textt($size, $wi, $color, $family) {
   font-family: $family;
   font-size: $size;
@@ -86,64 +135,16 @@ $rsb: "Raleway-SemiBold";
   }
 }
 
-@mixin clearfix() {
-  content: "";
-  display: block;
-  clear: both;
-}
 
 // bootstrap mixin for carousel
 @mixin transition($transition...) {
   @if $enable-transitions {
-    @if length($transition)==0 {
+    @if length($transition) ==0 {
       transition: $transition-base;
-    }
-
-    @else {
+    } @else {
       transition: $transition;
     }
   }
-}
-
-@mixin clearfix() {
-  &::after {
-    display: block;
-    clear: both;
-    content: "";
-  }
-}
-
-@mixin button($width, $height, $size, $wi, $color, $family, $colorhover, $coloractiv) {
-  outline: none;
-  display: block;
-  width: $width;
-  border: none;
-  border-radius: 3px;
-  background-color: #998675;
-  text-decoration: none;
-  text-align: center;
-  line-height: $height;
-  font-family: $family;
-  font-size: $size;
-  font-weight: $wi;
-  color: $color;
-  text-transform: uppercase;
-
-  &:hover {
-    background-color: $colorhover;
-    box-shadow: inset 0 -3px 0 $colorhover;
-  }
-
-  &:active {
-    background-color: $coloractiv;
-    box-shadow: inset 0 -3px 0 $coloractiv;
-  }
-}
-
-// start code**************************************
-* {
-  margin: 0;
-  padding: 0;
 }
 
 .contener {
@@ -174,8 +175,17 @@ $rsb: "Raleway-SemiBold";
     flex-direction: row;
     align-items: center;
 
+    .a-logo {
+      display: block;
+      width: 214px;
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
     .img-logo {
       display: inline-block;
+      fill: white;
     }
 
     .text-logo {
@@ -183,7 +193,23 @@ $rsb: "Raleway-SemiBold";
       color: #ffffff;
       letter-spacing: -1.36px;
       @include textt(34px, 400, white, $rr);
-      margin-left: 3px;
+      margin-left: 0px;
+    }
+
+    .a-logo:hover .img-logo {
+      fill: rgb(228, 152, 124);
+    }
+
+    .a-logo:hover .text-logo {
+      color: rgb(228, 152, 124);
+    }
+
+    .a-logo:active .img-logo {
+      fill: rgb(221, 99, 55);
+    }
+
+    .a-logo:active .text-logo {
+      color: rgb(221, 99, 55);
     }
 
     .nav-header {
@@ -200,6 +226,8 @@ $rsb: "Raleway-SemiBold";
         display: inline-block;
         @include textt(14px, 400, white, $mr);
         text-decoration: none;
+        @include hover-and-activ-color( rgb(228, 152, 124), rgb(233, 83, 29) );
+      
       }
 
       .a-nav-header:nth-of-type(2) {
@@ -229,22 +257,16 @@ $rsb: "Raleway-SemiBold";
       .a-nav-header:nth-of-type(8) {
         margin-left: 29px;
       }
-
-      .a-nav-header:hover {
-        color: orange;
-      }
-
-      .a-nav-header:active {
-        color: rgb(179, 28, 53);
-      }
     }
 
     .icon_cart {
       display: block;
-      background: url(../img/icon-cart.svg) no-repeat;
-      width: 18px;
-      height: 24px;
-      margin-left: 63px;
+      border: none;
+      outline: none;
+      margin-left: 55px;
+      background-color: rgba($color: #000000, $alpha: 0);
+      fill: white;
+      @include hover-and-activ-fill( rgb(228, 152, 124), rgb(233, 83, 29))
     }
 
     .form-search:hover .serch-button-header {
@@ -258,7 +280,8 @@ $rsb: "Raleway-SemiBold";
     }
 
     .form-search {
-      margin-top: 0;
+      margin-top: -3px;
+      margin-left: -5px;
     }
 
     .serch-button-header {
@@ -284,7 +307,6 @@ $rsb: "Raleway-SemiBold";
       border: none;
       outline: none;
       @include textt(14px, 400, white, $rr);
-
       @include placeholder {
         color: rgba($color: #000000, $alpha: 0);
       }
@@ -313,7 +335,6 @@ $rsb: "Raleway-SemiBold";
     }
   }
 
-  // carousel start**************************************************************
   .carousel {
     padding: 278px 147px 344px 147px;
     position: relative;
@@ -361,8 +382,12 @@ $rsb: "Raleway-SemiBold";
       .slaider-botton {
         margin: 0 auto;
         margin-top: 48px;
-        @include button(170px, 53px, 14px, 400, white, $reb, #502a09, #0a0603);
+        height: 53px;
+        border: none;
+        @include button(170px, 5px, #998675);
+        @include textt(14px, 400, white, $reb );
         box-shadow: inset 0 -3px 0 #736357;
+        text-transform: uppercase;
       }
     }
 
@@ -484,7 +509,7 @@ $rsb: "Raleway-SemiBold";
       margin-left: $carousel-control-width;
       list-style: none;
 
-      li {
+      a {
         box-sizing: border-box;
         flex: 0 1 auto;
         width: 15px;
@@ -505,10 +530,7 @@ $rsb: "Raleway-SemiBold";
         background-image: none;
       }
     }
-
-    //end caroesel****************************************************************
   }
-
   .carousel {
     @include clearfix();
   }
@@ -668,21 +690,21 @@ $rsb: "Raleway-SemiBold";
     width: 545px;
 
     .text-brown {
-      @include textt(28px, 400, #c7b299, $rr)
+      @include textt(28px, 400, #c7b299, $rr);
     }
 
     .text-white {
-      @include textt(28px, 400, #ffffff, $rr)
+      @include textt(28px, 400, #ffffff, $rr);
     }
 
     .p-Purchase-Now {
       margin-top: 5px;
-      @include textt(18px, 300, #615855, $mr)
+      @include textt(18px, 300, #615855, $mr);
     }
   }
 
   .button-Purchase-Now {
-    @include button(170px, 50px, 14px, 400, white, $reb, #502a09, #0a0603);
+    //@include button(170px, 50px, 14px, 400, white, $reb, #502a09, #0a0603);
     box-shadow: inset 0 -3px 0 #736357;
     @include clearfix();
   }
@@ -725,31 +747,31 @@ $rsb: "Raleway-SemiBold";
   }
 
   .button-Our-Latest-Projects:nth-child(1) {
-    @include button(70px, 32px, 14px, 300, #8c8c8c, $mr, #998675, #422107);
+    //@include button(70px, 32px, 14px, 300, #8c8c8c, $mr, #998675, #422107);
     background-color: white;
     border: 1px solid #ebebeb;
   }
 
   .button-Our-Latest-Projects:nth-child(2) {
-    @include button(120px, 32px, 14px, 300, #8c8c8c, $mr, #998675, #422107);
+    // @include button(120px, 32px, 14px, 300, #8c8c8c, $mr, #998675, #422107);
     background-color: white;
     border: 1px solid #ebebeb;
   }
 
   .button-Our-Latest-Projects:nth-child(3) {
-    @include button(120px, 32px, 14px, 300, #8c8c8c, $mr, #998675, #422107);
+    //@include button(120px, 32px, 14px, 300, #8c8c8c, $mr, #998675, #422107);
     background-color: white;
     border: 1px solid #ebebeb;
   }
 
   .button-Our-Latest-Projects:nth-child(4) {
-    @include button(120px, 32px, 14px, 300, #8c8c8c, $mr, #998675, #422107);
+    //@include button(120px, 32px, 14px, 300, #8c8c8c, $mr, #998675, #422107);
     background-color: white;
     border: 1px solid #ebebeb;
   }
 
   .button-Our-Latest-Projects:nth-child(5) {
-    @include button(135px, 32px, 14px, 300, #8c8c8c, $mr, #998675, #422107);
+    // @include button(135px, 32px, 14px, 300, #8c8c8c, $mr, #998675, #422107);
     background-color: white;
     border: 1px solid #ebebeb;
   }
@@ -770,7 +792,6 @@ $rsb: "Raleway-SemiBold";
 
   .img-Our-Latest-Prodjects {
     display: inline-block;
-   
   }
 
   .figcaption-Our-Latest-Projects {
@@ -778,5 +799,4 @@ $rsb: "Raleway-SemiBold";
     text-align-last: left;
     width: 370px;
   }
-
 }
