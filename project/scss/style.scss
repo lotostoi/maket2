@@ -121,18 +121,20 @@
   background-color: #fbfaf8;
   flex-direction: column;
   justify-content: space-between;
-  padding: 77px 575px 0 576px;
+  padding: 52px 575px 0 576px;
   box-sizing: border-box;
   z-index: 5;
 
   .h2-Waxom-is-Realization {
     text-align: center;
     width: 769px;
-    @include textt(30px, 400, #555555, $reb);
+    @include textt(30px, 400, #555555, $rsb);
+    margin-left: -3px;
   }
 
   .p2-Waxom-is-Realization {
-    margin-top: 15px;
+    margin-top: -8px;
+    margin-left: 2px;
     text-align: center;
     width: 769px;
     line-height: 28px;
@@ -140,7 +142,8 @@
   }
 
   .imgcenter {
-    margin-top: 36px;
+    margin-top: 18px;
+    margin-left: -3px;
     z-index: 20;
   }
 
