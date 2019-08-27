@@ -22,7 +22,7 @@
 }
 
 .cont-help {
-  padding: 71px 376px 79px 378px;
+  padding: 70px 341px 79px 376px;
   display: flex;
   justify-content: space-between;
 
@@ -32,42 +32,10 @@
     height: inherit;
     text-align: center;
     position: relative;
+    text-decoration: none;
 
-    .icon1 {
-      position: absolute;
-      right: 113px;
-      top: 10px;
-      width: 49px;
-      height: 49px;
-      background: url(../img/icon-pensel-grey.jpg) no-repeat;
-    }
-
-    .icon2 {
-      position: absolute;
-      right: 115px;
-      top: 18px;
-      width: 44px;
-      height: 40px;
-      background: url(../img/booffer-grey.jpg) no-repeat;
-      background-size: cover;
-    }
-
-    .icon3 {
-      position: absolute;
-      right: 113px;
-      top: 13px;
-      width: 44px;
-      height: 44px;
-      background: url(../img/koleso-grey.jpg) no-repeat;
-    }
-
-    .icon4 {
-      position: absolute;
-      right: 89px;
-      top: 22px;
-      width: 52px;
-      height: 36px;
-      background: url(../img/folder-gray.jpg) no-repeat;
+    .icon {
+      fill: #555555;
     }
 
     .h3-help {
@@ -79,7 +47,7 @@
     .p-help {
       width: 269px;
       line-height: 24px;
-      margin-top: 14px;
+      margin-top: -8px;
       margin-bottom: 28px;
       @include textt(14px, 300, #555555, $mr);
     }
@@ -95,24 +63,54 @@
     }
   }
 
-  .help:nth-child(1):hover .icon1 {
-    background: url(../img/icon-pensel-oreng.jpg) no-repeat;
+  .help:nth-child(1)>svg {
+    position: absolute;
+    right: 113px;
+    top: 10px;
   }
 
-  .help:nth-child(2):hover .icon2 {
-    background: url(../img/booffer-oreng.jpg) no-repeat;
+  .help:nth-child(2)>svg {
+    position: absolute;
+    right: 114px;
+    top: 19px;
   }
 
-  .help:nth-child(3):hover .icon3 {
-    background: url(../img/koleso-oreng.jpg) no-repeat;
+  .help:nth-child(3)>svg {
+    position: absolute;
+    right: 116px;
+    top: 15px;
   }
 
-  .help:nth-child(4):hover .icon4 {
-    background: url(../img/folder-oreng.jpg) no-repeat;
+  .help:nth-child(4)>svg {
+    position: absolute;
+    right: 108px;
+    top: 22px;
   }
+
+
 
   .help:hover .p-help::after {
-    border-top: 3px solid #c7b299;
+    border-top: #c7b299;
+  }
+
+  .help:active .p-help::after {
+    border-top: #cc7811;
+  }
+
+  .help:hover h3 {
+    color: #c7b299;
+  }
+
+  .help:active h3 {
+    color: #cc7811;
+  }
+
+  .help:hover svg {
+    fill: #c7b299;
+  }
+
+  .help:active svg {
+    fill: #cc7811;
   }
 }
 
