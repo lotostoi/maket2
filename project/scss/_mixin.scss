@@ -10,8 +10,9 @@
   @mixin button($width, $border-radius, $background-color) {
     display: flex;
     align-items: center;
+    justify-content: center;
     outline: none;
-    display: block;
+    
     width: $width;
     border-radius: $border-radius;
     background-color: $background-color;

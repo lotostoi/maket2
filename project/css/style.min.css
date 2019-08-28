@@ -23,6 +23,11 @@
   src: url(../font/Raleway/Raleway-SemiBold.ttf);
 }
 
+@font-face {
+  font-family: "Myriad Pro Regular";
+  src: url(../font/MyriadPro/8143.otf);
+}
+
 .contener {
   margin: 20px auto;
   width: auto;
@@ -390,8 +395,8 @@
   border: none;
   display: flex;
   align-items: center;
+  justify-content: center;
   outline: none;
-  display: block;
   width: 170px;
   border-radius: 5px;
   background-color: #998675;
@@ -741,7 +746,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 41px 358px 49px 376px;
+  padding: 44px 344px 48px 373px;
   background-color: #f4f5f8;
   background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
 }
@@ -750,11 +755,16 @@
   width: 545px;
 }
 
+.Purchase-Now .Purchase-Now-cont-next .h2-Purchase-Now {
+  margin: 0;
+}
+
 .Purchase-Now .Purchase-Now-cont-next .text-brown {
   font-family: "Raleway regular";
   font-size: 28px;
   font-weight: 400;
   color: #c7b299;
+  letter-spacing: 0.7px;
 }
 
 .Purchase-Now .Purchase-Now-cont-next .text-white {
@@ -762,35 +772,63 @@
   font-size: 28px;
   font-weight: 400;
   color: #ffffff;
+  letter-spacing: 0.1px;
 }
 
 .Purchase-Now .Purchase-Now-cont-next .p-Purchase-Now {
-  margin-top: 5px;
+  margin: 4px 0 0 -3px;
   font-family: "Montserrat";
   font-size: 18px;
   font-weight: 300;
   color: #615855;
+  letter-spacing: -0.05px;
 }
 
 .Purchase-Now .button-Purchase-Now {
+  margin: 5px 1px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  width: 170px;
+  border-radius: 5px;
+  background-color: #998675;
+  text-decoration: none;
+  line-height: 50px;
   box-shadow: inset 0 -3px 0 #736357;
+  font-family: "Raleway-ExtraBold";
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
 }
 
-.Purchase-Now .button-Purchase-Now::after {
-  display: block;
-  clear: both;
-  content: "";
+.Purchase-Now .button-Purchase-Now:hover {
+  background-color: #c58351;
+  color: #4d0a0a;
 }
 
+.Purchase-Now .button-Purchase-Now:active {
+  background-color: #f5700b;
+  color: white;
+}
+
+/* 
+**********************Our-Latest-Projects***********************
+**********************Our-Latest-Projects***********************
+**********************Our-Latest-Projects***********************
+**********************Our-Latest-Projects*********************** */
 .Our-Latest-Projects {
-  text-align: center;
-  padding: 81px 374px 80px 376px;
+  padding: 74px 374px 80px 374px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
 
 .h2-Our-Latest-Projects {
-  margin: 0 auto;
+  margin: 0;
+  margin-left: 443px;
   width: 300px;
   font-family: "Raleway-SemiBold";
   font-size: 30px;
@@ -799,22 +837,23 @@
 }
 
 .p-Our-Latest-Projects {
-  margin: 0 auto;
-  margin-top: 24px;
+  margin: 17px 0 0 191px;
+  text-align: center;
   width: 790px;
   line-height: 28px;
   font-family: "Montserrat";
   font-size: 16px;
   font-weight: 300;
   color: #8c8c8c;
+  position: relative;
 }
 
 .nav-Our-Latest-Projects {
   display: flex;
-  width: 608px;
+  width: 606px;
   box-sizing: border-box;
-  margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 34px;
+  margin-left: 279px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -825,28 +864,138 @@
 }
 
 .nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(1) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  width: 70px;
+  border-radius: 3px;
   background-color: white;
+  text-decoration: none;
+  height: 32px;
   border: 1px solid #ebebeb;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(1):hover {
+  background-color: #998675;
+  color: #f8f8f8;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(1):active {
+  background-color: #d8c29a;
+  color: white;
 }
 
 .nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  width: 120px;
+  border-radius: 3px;
   background-color: white;
+  text-decoration: none;
+  height: 32px;
   border: 1px solid #ebebeb;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(2):hover {
+  background-color: #998675;
+  color: #f8f8f8;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(2):active {
+  background-color: #d8c29a;
+  color: white;
 }
 
 .nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(3) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  width: 120px;
+  border-radius: 3px;
   background-color: white;
+  text-decoration: none;
+  height: 32px;
   border: 1px solid #ebebeb;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(3):hover {
+  background-color: #998675;
+  color: #f8f8f8;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(3):active {
+  background-color: #d8c29a;
+  color: white;
 }
 
 .nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(4) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  width: 120px;
+  border-radius: 3px;
   background-color: white;
+  text-decoration: none;
+  height: 32px;
   border: 1px solid #ebebeb;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(4):hover {
+  background-color: #998675;
+  color: #f8f8f8;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(4):active {
+  background-color: #d8c29a;
+  color: white;
 }
 
 .nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(5) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  width: 135px;
+  border-radius: 3px;
   background-color: white;
+  text-decoration: none;
+  height: 32px;
   border: 1px solid #ebebeb;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 300;
+  color: #000;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(5):hover {
+  background-color: #998675;
+  color: #f8f8f8;
+}
+
+.nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(5):active {
+  background-color: #d8c29a;
+  color: white;
 }
 
 .nav-Our-Latest-Projects .button-Our-Latest-Projects:hover {
@@ -857,18 +1006,66 @@
   display: flex;
   justify-content: space-between;
   box-sizing: border-box;
+  flex-wrap: wrap;
+  width: 1170px;
+  margin-top: 41px;
 }
 
-.rov1-Our-Latest-Projects .figure-Our-Latest-Projects {
+.rov1-Our-Latest-Projects .a-Our-Latest-Projects {
+  background-color: #fbfaf8;
   width: 370px;
+  text-decoration: none;
 }
 
-.rov1-Our-Latest-Projects .img-Our-Latest-Prodjects {
+.rov1-Our-Latest-Projects .img-Our-Latest-Projects {
   display: inline-block;
 }
 
-.rov1-Our-Latest-Projects .figcaption-Our-Latest-Projects {
-  display: inline-block;
-  text-align-last: left;
-  width: 370px;
+.rov1-Our-Latest-Projects .p1-Our-Latest-Projects {
+  margin: 22px 0 0 27px;
+  position: relative;
+  font-family: "Raleway medium";
+  font-size: 20px;
+  font-weight: 300;
+  color: #d5c5b2;
+}
+
+.rov1-Our-Latest-Projects .p1-Our-Latest-Projects::before {
+  content: '';
+  display: block;
+  position: absolute;
+  border: 23px solid rgba(255, 255, 255, 0);
+  border-bottom: 15px solid #fbfaf8;
+  left: -17px;
+  bottom: 45px;
+}
+
+.rov1-Our-Latest-Projects .p2-Our-Latest-Projects {
+  margin: 7px 0 25px 27px;
+  font-family: "Montserrat";
+  font-size: 14px;
+  font-weight: 300;
+  color: #d1d1d1;
+}
+
+.rov1-Our-Latest-Projects .a-Our-Latest-Projects:hover {
+  background-color: #362f2d;
+}
+
+.rov1-Our-Latest-Projects .a-Our-Latest-Projects:hover .p1-Our-Latest-Projects::before {
+  border-bottom: 15px solid #362f2d;
+}
+
+.rov1-Our-Latest-Projects .a-Our-Latest-Projects:hover .p1-Our-Latest-Projects {
+  color: white;
+}
+
+.rov1-Our-Latest-Projects .a-Our-Latest-Projects:hover .p2-Our-Latest-Projects {
+  color: #c7b299;
+}
+
+.rov1-Our-Latest-Projects .a-Our-Latest-Projects:nth-child(4),
+.rov1-Our-Latest-Projects .a-Our-Latest-Projects:nth-child(5),
+.rov1-Our-Latest-Projects .a-Our-Latest-Projects:nth-child(6) {
+  margin-top: 30px;
 }
