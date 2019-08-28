@@ -1,0 +1,100 @@
+.cont-help {
+  padding: 70px 341px 79px 376px;
+  display: flex;
+  justify-content: space-between;
+}
+.help {
+  display: block;
+  width: 270px;
+  height: inherit;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+}
+.icon {
+  fill: #555555;
+}
+
+.h3-help {
+  margin-top: 83px;
+  width: 269px;
+  @include textt(22px, 400, #555555, $rsb);
+}
+
+.p-help {
+  width: 269px;
+  line-height: 24px;
+  margin-top: -8px;
+  margin-bottom: 28px;
+  @include textt(14px, 300, #555555, $mr);
+}
+
+.p-help::after {
+  position: absolute;
+  content: "";
+  display: block;
+  border-top: 3px solid #555555;
+  width: 70px;
+  bottom: 0;
+  left: 98px;
+}
+
+.help:nth-child(1) > svg {
+  position: absolute;
+  right: 113px;
+  top: 10px;
+}
+
+.help:nth-child(2) > svg {
+  position: absolute;
+  right: 114px;
+  top: 19px;
+}
+
+.help:nth-child(3) > svg {
+  position: absolute;
+  right: 116px;
+  top: 15px;
+}
+
+.help:nth-child(4) > svg {
+  position: absolute;
+  right: 108px;
+  top: 22px;
+}
+
+.help:hover .p-help::after {
+  border-top: 3px solid #c7b299;
+}
+
+.help:active .p-help::after {
+  border-top: 3px solid #cc7811;
+}
+
+.help:hover h3 {
+  color: #c7b299;
+}
+
+.help:active h3 {
+  color: #cc7811;
+}
+
+.help:hover svg {
+  fill: #c7b299;
+}
+
+.help:active svg {
+  fill: #cc7811;
+}
+
+.Waxom-is-ealization {
+  width: inherit;
+  display: flex;
+  position: relative;
+  background-color: #fbfaf8;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 52px 575px 0 576px;
+  box-sizing: border-box;
+  z-index: 5;
+}

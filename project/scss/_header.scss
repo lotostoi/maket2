@@ -2,20 +2,27 @@
 // header********************************************
 // header********************************************
 .header {
-    width: 100%;
+    width: 1920px;
     background-image: url("../img/fon_header.jpg");
     background-size: cover;
     padding-top: 40px;
     padding-bottom: 40px;
-  
+    @media (max-width: 1024px) {
+      width:1920px/100*53;       
+    }
+   
     .logo-nav-sersh {
-      padding: 0 236px 0 374px;
+      padding: 0 275px 0 374px;
+       @media (max-width: 1024px) {
+        padding: 0 236px/100*61 0 374px/100*61;      
+      }
       box-sizing: border-box;
       width: 100%;
-      height: 58px;
       display: flex;
       flex-direction: row;
       align-items: center;
+      flex-wrap: wrap;
+      justify-content:space-between;
   
       .a-logo {
         display: block;
@@ -60,9 +67,15 @@
         justify-content: flex-start;
         align-items: center;
         height: 58px;
-        width: 1035px;
+        width: 873px;
         margin-top: -1px;
-        margin-left: 217px;
+
+       @media (max-width: 1024px) {
+            width:  1024px/100*67;   
+            margin-left: 0px;    
+          }
+        
+
   
         .a-nav-header {
           display: inline-block;
@@ -182,9 +195,16 @@
     .carousel {
       padding: 278px 147px 0px 147px;
       position: relative;
+      @media (max-width: 1024px) {
+        width:  1024px/100*67; 
+        padding: 278px/100*67 147px/100*67 0px 147px/100*67;    
+      }
   
       .carousel-item {
-        width: 100%;
+       // width: 100%;
+        @media (max-width: 1024px) {
+          width:  1024px/100*67; 
+        }
         position: relative;
         display: none;
         float: left;
@@ -198,6 +218,10 @@
           margin: 2px 0 0 527px;
           padding: 0;
           width: 568px;
+          @media (max-width: 1024px) {
+            width:  568px/100*67; 
+            margin: 0 auto;
+          }
           text-align: center;
           @include textt(36px, 500, white, $rm);
           line-height: 36px;
@@ -210,6 +234,10 @@
           text-align: center;
           @include textt(52px, 800, white, $reb);
           line-height: 52px;
+          @media (max-width: 1024px) {
+            width: 100%; 
+            margin: 0 auto;
+          }
   
           .pobel {
             margin-left: 2px;
@@ -226,10 +254,18 @@
           text-align: center;
           line-height: 24px;
           @include textt(16px, 300, white, $mr);
+          @media (max-width: 1024px) {
+            width:  568px/100*67; 
+            margin: 0 auto;
+          }
+          
         }
   
         .slaider-botton {
           margin: 49px 0 0 726px;
+          @media (max-width: 1024px) {
+            margin: 0 auto; 
+          }
           height: 53px;
           border: none;
           @include button(170px, 5px, #998675);
@@ -354,6 +390,11 @@
         display: flex;
         padding-left: 0;
         margin-left: 758px;
+        @media (max-width: 1024px) {
+          width:  102px/100*67; 
+          margin: 0 auto;
+          margin-top: 594px;
+        }
         margin-top: 594px;
         list-style: none;
   
