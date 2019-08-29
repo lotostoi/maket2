@@ -266,7 +266,7 @@
           @media (max-width: 1024px) {
             margin: 0 auto; 
           }
-          height: 53px;
+          line-height: 53px;
           border: none;
           @include button(170px, 5px, #998675);
           @include textt(14px, 400, white, $reb);
@@ -379,7 +379,7 @@
         height: 73px;
         background: url(../img/right.svg) no-repeat;
         margin-top: -62px;
-        margin-left: 15px;
+        margin-left: -44px;
       }
   
       .carousel-indicators {

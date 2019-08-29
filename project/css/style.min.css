@@ -391,7 +391,7 @@
 
 .header .carousel .carousel-item .slaider-botton {
   margin: 49px 0 0 726px;
-  height: 53px;
+  line-height: 53px;
   border: none;
   display: flex;
   align-items: center;
@@ -515,7 +515,7 @@
   height: 73px;
   background: url(../img/right.svg) no-repeat;
   margin-top: -62px;
-  margin-left: 15px;
+  margin-left: -44px;
 }
 
 .header .carousel .carousel-indicators {
@@ -686,7 +686,7 @@
   background-color: #fbfaf8;
   flex-direction: column;
   justify-content: space-between;
-  padding: 52px 575px 0 576px;
+  padding: 79px 575px 0 574px;
   box-sizing: border-box;
   z-index: 5;
 }
@@ -698,12 +698,11 @@
   font-size: 30px;
   font-weight: 400;
   color: #555555;
-  margin-left: -3px;
+  margin: 0 auto;
 }
 
 .Waxom-is-ealization .p2-Waxom-is-Realization {
-  margin-top: -8px;
-  margin-left: 2px;
+  margin: 16px auto;
   text-align: center;
   width: 769px;
   line-height: 28px;
@@ -714,8 +713,8 @@
 }
 
 .Waxom-is-ealization .imgcenter {
+  margin: 0 auto;
   margin-top: 18px;
-  margin-left: -3px;
   background-color: #615855;
   z-index: 20;
 }
@@ -820,7 +819,7 @@
 **********************Our-Latest-Projects***********************
 **********************Our-Latest-Projects*********************** */
 .Our-Latest-Projects {
-  padding: 74px 374px 80px 374px;
+  padding: 75px 374px 80px 374px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -828,7 +827,7 @@
 
 .h2-Our-Latest-Projects {
   margin: 0;
-  margin-left: 443px;
+  margin-left: 446px;
   width: 300px;
   font-family: "Raleway-SemiBold";
   font-size: 30px;
@@ -852,15 +851,16 @@
   display: flex;
   width: 606px;
   box-sizing: border-box;
-  margin-top: 34px;
-  margin-left: 279px;
+  margin-top: 32px;
+  margin-left: 282px;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
 .nav-Our-Latest-Projects .button-Our-Latest-Projects {
   display: inline-block;
-  border-radius: 5px;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-Our-Latest-Projects .button-Our-Latest-Projects:nth-child(1) {
@@ -872,7 +872,7 @@
   border-radius: 3px;
   background-color: white;
   text-decoration: none;
-  height: 32px;
+  line-height: 32px;
   border: 1px solid #ebebeb;
   font-family: "Montserrat";
   font-size: 14px;
@@ -899,7 +899,7 @@
   border-radius: 3px;
   background-color: white;
   text-decoration: none;
-  height: 32px;
+  line-height: 32px;
   border: 1px solid #ebebeb;
   font-family: "Montserrat";
   font-size: 14px;
@@ -926,7 +926,7 @@
   border-radius: 3px;
   background-color: white;
   text-decoration: none;
-  height: 32px;
+  line-height: 32px;
   border: 1px solid #ebebeb;
   font-family: "Montserrat";
   font-size: 14px;
@@ -953,7 +953,7 @@
   border-radius: 3px;
   background-color: white;
   text-decoration: none;
-  height: 32px;
+  line-height: 32px;
   border: 1px solid #ebebeb;
   font-family: "Montserrat";
   font-size: 14px;
@@ -980,7 +980,7 @@
   border-radius: 3px;
   background-color: white;
   text-decoration: none;
-  height: 32px;
+  line-height: 32px;
   border: 1px solid #ebebeb;
   font-family: "Montserrat";
   font-size: 14px;
@@ -1008,17 +1008,73 @@
   box-sizing: border-box;
   flex-wrap: wrap;
   width: 1170px;
-  margin-top: 41px;
+  margin-top: 39px;
 }
 
 .rov1-Our-Latest-Projects .a-Our-Latest-Projects {
   background-color: #fbfaf8;
   width: 370px;
   text-decoration: none;
+  position: relative;
+}
+
+.rov1-Our-Latest-Projects .a-link {
+  position: absolute;
+  left: 143px;
+  top: 91px;
+  z-index: 206;
+  display: none;
+}
+
+.rov1-Our-Latest-Projects .a-link .link {
+  fill: #a1825b;
+}
+
+.rov1-Our-Latest-Projects .a-link .link:hover {
+  fill: #6bd43a;
+}
+
+.rov1-Our-Latest-Projects .a-link .link:active {
+  fill: #226801;
+}
+
+.rov1-Our-Latest-Projects .a-lupa {
+  position: absolute;
+  left: 193px;
+  top: 91px;
+  z-index: 205;
+  display: none;
+}
+
+.rov1-Our-Latest-Projects .a-lupa .lupa {
+  fill: white;
+}
+
+.rov1-Our-Latest-Projects .a-lupa .lupa:hover {
+  fill: #e43131;
+}
+
+.rov1-Our-Latest-Projects .a-lupa .lupa:active {
+  fill: orangered;
 }
 
 .rov1-Our-Latest-Projects .img-Our-Latest-Projects {
   display: inline-block;
+  background-color: #2f2f2f;
+}
+
+.rov1-Our-Latest-Projects .a-Our-Latest-Projects::before {
+  content: "";
+  background-image: -moz-linear-gradient(0deg, #211b19 0%, rgb rgba(39, 33, 31, 0.8) 0%);
+  background-image: -webkit-linear-gradient(0deg, #1d1716 0%, rgba(39, 33, 31, 0.8) 0%);
+  background-image: -ms-linear-gradient(0deg, #211b19 0%, rgba(39, 33, 31, 0.8) 0%);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 370px;
+  height: 236px;
+  z-index: 169;
+  display: none;
 }
 
 .rov1-Our-Latest-Projects .p1-Our-Latest-Projects {
@@ -1031,13 +1087,14 @@
 }
 
 .rov1-Our-Latest-Projects .p1-Our-Latest-Projects::before {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   border: 23px solid rgba(255, 255, 255, 0);
   border-bottom: 15px solid #fbfaf8;
   left: -17px;
   bottom: 45px;
+  z-index: 200;
 }
 
 .rov1-Our-Latest-Projects .p2-Our-Latest-Projects {
@@ -1050,6 +1107,28 @@
 
 .rov1-Our-Latest-Projects .a-Our-Latest-Projects:hover {
   background-color: #362f2d;
+}
+
+.rov1-Our-Latest-Projects .a-Our-Latest-Projects:hover .a-lupa {
+  display: block;
+}
+
+.rov1-Our-Latest-Projects .a-Our-Latest-Projects:hover .a-link {
+  display: block;
+}
+
+.rov1-Our-Latest-Projects .a-Our-Latest-Projects:hover::before {
+  display: block;
+  content: "";
+  background-image: -moz-linear-gradient(0deg, #211b19 0%, rgb rgba(39, 33, 31, 0.7) 0%);
+  background-image: -webkit-linear-gradient(0deg, #1d1716 0%, rgba(39, 33, 31, 0.7) 0%);
+  background-image: -ms-linear-gradient(0deg, #211b19 0%, rgba(39, 33, 31, 0.7) 0%);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 370px;
+  height: 236px;
+  z-index: 169;
 }
 
 .rov1-Our-Latest-Projects .a-Our-Latest-Projects:hover .p1-Our-Latest-Projects::before {
@@ -1067,5 +1146,73 @@
 .rov1-Our-Latest-Projects .a-Our-Latest-Projects:nth-child(4),
 .rov1-Our-Latest-Projects .a-Our-Latest-Projects:nth-child(5),
 .rov1-Our-Latest-Projects .a-Our-Latest-Projects:nth-child(6) {
-  margin-top: 30px;
+  margin-top: 31px;
+}
+
+.button-Our-Latest-Projectss {
+  margin: 36px auto 80px;
+  line-height: 50px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  width: 170px;
+  border-radius: 5px;
+  background-color: #998675;
+  text-decoration: none;
+  font-family: "Raleway-ExtraBold";
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  box-shadow: inset 0 -3px 0 #736357;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1024px) {
+  .button-Our-Latest-Projectss {
+    margin: 0 auto;
+  }
+}
+
+.button-Our-Latest-Projectss:hover {
+  background-color: #a57449;
+  color: white;
+}
+
+.button-Our-Latest-Projectss:active {
+  background-color: #b35e14;
+  color: white;
+}
+
+.start-video {
+  fill: white;
+}
+
+.start-video:active + .video-precenteition {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  outline: none;
+  background-color: #445162;
+  object-fit: cover;
+}
+
+.video {
+  width: 1920px;
+  height: 706px;
+  background: url("../img/fon-photo1.jpg") no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.video-precenteition {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  outline: none;
+  background-color: #445162;
+  object-fit: cover;
 }
