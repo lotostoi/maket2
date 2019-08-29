@@ -819,10 +819,11 @@
 **********************Our-Latest-Projects***********************
 **********************Our-Latest-Projects*********************** */
 .Our-Latest-Projects {
-  padding: 75px 374px 80px 374px;
+  padding: 75px 343px 80px 374px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-bottom: 1px solid #8c8c8c;
 }
 
 .h2-Our-Latest-Projects {
@@ -1150,7 +1151,7 @@
 }
 
 .button-Our-Latest-Projectss {
-  margin: 36px auto 80px;
+  margin: 36px auto 0;
   line-height: 50px;
   border: none;
   display: flex;
@@ -1183,36 +1184,4 @@
 .button-Our-Latest-Projectss:active {
   background-color: #b35e14;
   color: white;
-}
-
-.start-video {
-  fill: white;
-}
-
-.start-video:active + .video-precenteition {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: block;
-  outline: none;
-  background-color: #445162;
-  object-fit: cover;
-}
-
-.video {
-  width: 1920px;
-  height: 706px;
-  background: url("../img/fon-photo1.jpg") no-repeat;
-  background-size: cover;
-  position: relative;
-}
-
-.video-precenteition {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: none;
-  outline: none;
-  background-color: #445162;
-  object-fit: cover;
 }
