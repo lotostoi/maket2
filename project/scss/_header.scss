@@ -41,7 +41,7 @@
         display: inline-block;
         color: #ffffff;
         letter-spacing: -0.9px;
-        @include textt(34px, 400, white, $rr);
+        @include textt(34px, white, $rr);
         margin-left: 2px;
       }
   
@@ -79,7 +79,7 @@
   
         .a-nav-header {
           display: inline-block;
-          @include textt(14px, 400, white, $mr);
+          @include textt(14px, white, $ml);
           text-decoration: none;
           @include hover-and-activ-color(rgb(228, 152, 124), rgb(233, 83, 29));
   
@@ -162,7 +162,7 @@
         width: 100px;
         border: none;
         outline: none;
-        @include textt(14px, 400, white, $rr);
+        @include textt(14px, white, $rr);
   
         @include placeholder {
           color: rgba($color: #000000, $alpha: 0);
@@ -184,7 +184,7 @@
         border: 1px solid white;
         border-left: none;
         background-color: rgb(66, 60, 60);
-        @include textt(14px, 400, white, $rr);
+        @include textt(14px, white, $rr);
   
         @include placeholder {
           color: white;
@@ -223,7 +223,7 @@
             margin: 0 auto;
           }
           text-align: center;
-          @include textt(36px, 500, white, $rm);
+          @include textt(36px, white, $rm);
           line-height: 36px;
         }
   
@@ -232,7 +232,7 @@
           margin: 12px 0 0 426px;
           width: 768px;
           text-align: center;
-          @include textt(52px, 800, white, $reb);
+          @include textt(52px, white, $reb);
           line-height: 52px;
           @media (max-width: 1024px) {
             width: 100%; 
@@ -241,7 +241,7 @@
   
           .pobel {
             margin-left: 2px;
-            @include textt(52px, 800, white, $reb);
+            @include textt(52px, white, $reb);
             line-height: 52px;
             padding: 0;
           }
@@ -253,7 +253,7 @@
           width: 568px;
           text-align: center;
           line-height: 24px;
-          @include textt(16px, 300, white, $mr);
+          @include textt(16px, white, $mr);
           @media (max-width: 1024px) {
             width:  568px/100*67; 
             margin: 0 auto;
@@ -269,7 +269,7 @@
           line-height: 53px;
           border: none;
           @include button(170px, 5px, #998675);
-          @include textt(14px, 400, white, $reb);
+          @include textt(14px, white, $reb);
           box-shadow: inset 0 -3px 0 #736357;
           text-transform: uppercase;
           @include hover-and-activ-color-an-back-color(white, #a57449, white, #b35e14);

@@ -1,6 +1,17 @@
 @font-face {
-  font-family: "Montserrat";
-  src: url(../font/Montserrat/Montserrat-Light.ttf);
+  font-family: 'Montserrat regular';
+  src: url("../font/Montserrat/montserrat-regular-webfont.eot");
+  src: url("../font/Montserrat/montserrat-regular-webfont.eot?#iefix") format("embedded-opentype"), url("../font/Montserrat/montserrat-regular-webfont.woff2") format("woff2"), url("../font/Montserrat/montserrat-regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat light';
+  src: url("../font/Montserrat/montserrat-light-webfont.eot");
+  src: url("../font/Montserrat/montserrat-light-webfont.eot?#iefix") format("embedded-opentype"), url("../font/Montserrat/montserrat-light-webfont.woff2") format("woff2"), url("../font/Montserrat/montserrat-light.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
@@ -90,9 +101,8 @@
   display: inline-block;
   color: #ffffff;
   letter-spacing: -0.9px;
-  font-family: "Raleway regular";
+  font-family: "Raleway regular", "Arial", Sans-serif;
   font-size: 34px;
-  font-weight: 400;
   color: white;
   margin-left: 2px;
 }
@@ -132,9 +142,8 @@
 
 .header .logo-nav-sersh .nav-header .a-nav-header {
   display: inline-block;
-  font-family: "Montserrat";
+  font-family: "Montserrat light", "Arial", Sans-serif;
   font-size: 14px;
-  font-weight: 400;
   color: white;
   text-decoration: none;
 }
@@ -230,9 +239,8 @@
   width: 100px;
   border: none;
   outline: none;
-  font-family: "Raleway regular";
+  font-family: "Raleway regular", "Arial", Sans-serif;
   font-size: 14px;
-  font-weight: 400;
   color: white;
 }
 
@@ -267,9 +275,8 @@
   border: 1px solid white;
   border-left: none;
   background-color: #423c3c;
-  font-family: "Raleway regular";
+  font-family: "Raleway regular", "Arial", Sans-serif;
   font-size: 14px;
-  font-weight: 400;
   color: white;
 }
 
@@ -327,9 +334,8 @@
   padding: 0;
   width: 568px;
   text-align: center;
-  font-family: "Raleway medium";
+  font-family: "Raleway medium", "Arial", Sans-serif;
   font-size: 36px;
-  font-weight: 500;
   color: white;
   line-height: 36px;
 }
@@ -346,9 +352,8 @@
   margin: 12px 0 0 426px;
   width: 768px;
   text-align: center;
-  font-family: "Raleway-ExtraBold";
+  font-family: "Raleway-ExtraBold", "Arial", Sans-serif;
   font-size: 52px;
-  font-weight: 800;
   color: white;
   line-height: 52px;
 }
@@ -362,9 +367,8 @@
 
 .header .carousel .carousel-item .h1-slaider .pobel {
   margin-left: 2px;
-  font-family: "Raleway-ExtraBold";
+  font-family: "Raleway-ExtraBold", "Arial", Sans-serif;
   font-size: 52px;
-  font-weight: 800;
   color: white;
   line-height: 52px;
   padding: 0;
@@ -376,9 +380,8 @@
   width: 568px;
   text-align: center;
   line-height: 24px;
-  font-family: "Montserrat";
+  font-family: "Montserrat regular", "Arial", Sans-serif;
   font-size: 16px;
-  font-weight: 300;
   color: white;
 }
 
@@ -401,9 +404,8 @@
   border-radius: 5px;
   background-color: #998675;
   text-decoration: none;
-  font-family: "Raleway-ExtraBold";
+  font-family: "Raleway-ExtraBold", "Arial", Sans-serif;
   font-size: 14px;
-  font-weight: 400;
   color: white;
   box-shadow: inset 0 -3px 0 #736357;
   text-transform: uppercase;
@@ -592,9 +594,8 @@
 .h3-help {
   margin-top: 83px;
   width: 269px;
-  font-family: "Raleway-SemiBold";
+  font-family: "Raleway-SemiBold", "Arial", Sans-serif;
   font-size: 22px;
-  font-weight: 400;
   color: #555555;
 }
 
@@ -603,9 +604,8 @@
   line-height: 24px;
   margin-top: -8px;
   margin-bottom: 28px;
-  font-family: "Montserrat";
+  font-family: "Montserrat light", "Arial", Sans-serif;
   font-size: 14px;
-  font-weight: 300;
   color: #555555;
 }
 
@@ -694,9 +694,8 @@
 .Waxom-is-ealization .h2-Waxom-is-Realization {
   text-align: center;
   width: 769px;
-  font-family: "Raleway-SemiBold";
+  font-family: "Raleway-SemiBold", "Arial", Sans-serif;
   font-size: 30px;
-  font-weight: 400;
   color: #555555;
   margin: 0 auto;
 }
@@ -706,9 +705,8 @@
   text-align: center;
   width: 769px;
   line-height: 28px;
-  font-family: "Montserrat";
+  font-family: "Montserrat light", "Arial", Sans-serif;
   font-size: 16px;
-  font-weight: 300;
   color: #8c8c8c;
 }
 
@@ -716,6 +714,10 @@
   margin: 0 auto;
   margin-top: 18px;
   background-color: #615855;
+  z-index: 20;
+}
+
+.Waxom-is-ealization .imgcenter:hover {
   z-index: 20;
 }
 
@@ -759,26 +761,23 @@
 }
 
 .Purchase-Now .Purchase-Now-cont-next .text-brown {
-  font-family: "Raleway regular";
+  font-family: "Raleway regular", "Arial", Sans-serif;
   font-size: 28px;
-  font-weight: 400;
   color: #c7b299;
   letter-spacing: 0.7px;
 }
 
 .Purchase-Now .Purchase-Now-cont-next .text-white {
-  font-family: "Raleway regular";
+  font-family: "Raleway regular", "Arial", Sans-serif;
   font-size: 28px;
-  font-weight: 400;
   color: #ffffff;
   letter-spacing: 0.1px;
 }
 
 .Purchase-Now .Purchase-Now-cont-next .p-Purchase-Now {
   margin: 4px 0 0 -3px;
-  font-family: "Montserrat";
+  font-family: "Montserrat light", "Arial", Sans-serif;
   font-size: 18px;
-  font-weight: 300;
   color: #615855;
   letter-spacing: -0.05px;
 }
@@ -795,9 +794,8 @@
   text-decoration: none;
   line-height: 50px;
   box-shadow: inset 0 -3px 0 #736357;
-  font-family: "Raleway-ExtraBold";
+  font-family: "Raleway-ExtraBold", "Arial", Sans-serif;
   font-size: 14px;
-  font-weight: 400;
   color: #fff;
   border: none;
   text-transform: uppercase;
@@ -830,9 +828,8 @@
   margin: 0;
   margin-left: 446px;
   width: 300px;
-  font-family: "Raleway-SemiBold";
+  font-family: "Raleway-SemiBold", "Arial", Sans-serif;
   font-size: 30px;
-  font-weight: 400;
   color: #555555;
 }
 
@@ -841,9 +838,8 @@
   text-align: center;
   width: 790px;
   line-height: 28px;
-  font-family: "Montserrat";
+  font-family: "Montserrat light", "Arial", Sans-serif;
   font-size: 16px;
-  font-weight: 300;
   color: #8c8c8c;
   position: relative;
 }
@@ -875,9 +871,8 @@
   text-decoration: none;
   line-height: 32px;
   border: 1px solid #ebebeb;
-  font-family: "Montserrat";
+  font-family: "Montserrat light", "Arial", Sans-serif;
   font-size: 14px;
-  font-weight: 300;
   color: #000;
 }
 
@@ -902,9 +897,8 @@
   text-decoration: none;
   line-height: 32px;
   border: 1px solid #ebebeb;
-  font-family: "Montserrat";
+  font-family: "Montserrat light", "Arial", Sans-serif;
   font-size: 14px;
-  font-weight: 300;
   color: #000;
 }
 
@@ -929,9 +923,8 @@
   text-decoration: none;
   line-height: 32px;
   border: 1px solid #ebebeb;
-  font-family: "Montserrat";
+  font-family: "Montserrat light", "Arial", Sans-serif;
   font-size: 14px;
-  font-weight: 300;
   color: #000;
 }
 
@@ -956,9 +949,8 @@
   text-decoration: none;
   line-height: 32px;
   border: 1px solid #ebebeb;
-  font-family: "Montserrat";
+  font-family: "Montserrat light", "Arial", Sans-serif;
   font-size: 14px;
-  font-weight: 300;
   color: #000;
 }
 
@@ -983,9 +975,8 @@
   text-decoration: none;
   line-height: 32px;
   border: 1px solid #ebebeb;
-  font-family: "Montserrat";
+  font-family: "Montserrat light", "Arial", Sans-serif;
   font-size: 14px;
-  font-weight: 300;
   color: #000;
 }
 
@@ -1081,9 +1072,8 @@
 .rov1-Our-Latest-Projects .p1-Our-Latest-Projects {
   margin: 22px 0 0 27px;
   position: relative;
-  font-family: "Raleway medium";
+  font-family: "Raleway medium", "Arial", Sans-serif;
   font-size: 20px;
-  font-weight: 300;
   color: #d5c5b2;
 }
 
@@ -1100,9 +1090,8 @@
 
 .rov1-Our-Latest-Projects .p2-Our-Latest-Projects {
   margin: 7px 0 25px 27px;
-  font-family: "Montserrat";
+  font-family: "Montserrat regular", "Arial", Sans-serif;
   font-size: 14px;
-  font-weight: 300;
   color: #d1d1d1;
 }
 
@@ -1162,9 +1151,8 @@
   border-radius: 5px;
   background-color: #998675;
   text-decoration: none;
-  font-family: "Raleway-ExtraBold";
+  font-family: "Raleway-ExtraBold", "Arial", Sans-serif;
   font-size: 14px;
-  font-weight: 400;
   color: white;
   box-shadow: inset 0 -3px 0 #736357;
   text-transform: uppercase;
@@ -1184,4 +1172,87 @@
 .button-Our-Latest-Projectss:active {
   background-color: #b35e14;
   color: white;
+}
+
+/* **********************video***********************************
+**********************video***********************************
+**********************video***********************************
+**********************video*********************************** */
+.video {
+  position: relative;
+}
+
+.video-precenteition {
+  margin: 0;
+  outline: none;
+  background-color: #445162;
+  object-fit: cover;
+}
+
+.video-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1920px;
+  height: 706px;
+  background-image: url("../img/fon-photo1.jpg");
+  background-size: cover;
+}
+
+.start-video {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 206px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100px;
+  height: 100px;
+  z-index: 200;
+  border: none;
+  outline: none;
+}
+
+.button-start-video {
+  fill: white;
+  z-index: 243;
+}
+
+.button-start-video:hover {
+  fill: #c7b299;
+}
+
+.button-start-video:active {
+  fill: #04f118;
+}
+
+.h2-video {
+  text-align: center;
+  margin-top: 20px;
+  width: 900px;
+  font-family: "Raleway medium", "Arial", Sans-serif;
+  font-size: 30px;
+  color: white;
+}
+
+.p-video {
+  text-align: center;
+  margin-top: 20px;
+  width: 590px;
+  font-family: "Montserrat light", "Arial", Sans-serif;
+  font-size: 16px;
+  color: white;
+}
+
+.video-time {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  width: 90px;
+  font-family: "Montserrat regular", "Arial", Sans-serif;
+  font-size: 14px;
+  color: #c7b299;
 }

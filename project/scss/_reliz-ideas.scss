@@ -12,7 +12,7 @@
   .h2-Waxom-is-Realization {
     text-align: center;
     width: 769px;
-    @include textt(30px, 400, #555555, $rsb);
+    @include textt(30px,  #555555, $rsb);
     // margin-left: -3px;
     margin: 0 auto;
   }
@@ -23,7 +23,7 @@
     text-align: center;
     width: 769px;
     line-height: 28px;
-    @include textt(16px, 300, #8c8c8c, $mr);
+    @include textt(16px,  #8c8c8c, $ml);
   }
 
   .imgcenter {
@@ -31,11 +31,11 @@
     margin-top: 18px;
     // margin-left: -3px;
     background-color: #615855;
-    z-index: $centrimgz;
+    z-index: 20;
   }
 
   .imgcenter:hover {
-    $centrimgz: 30;
+    z-index: 20;
   }
 
   .imgleft {

@@ -49,10 +49,9 @@
     }
   }
   
-  @mixin textt($size, $wi, $color, $family) {
+  @mixin textt($size, $color, $family) {
     font-family: $family;
     font-size: $size;
-    font-weight: $wi;
     color: $color;
   }
   
