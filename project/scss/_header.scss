@@ -253,7 +253,7 @@
           width: 568px;
           text-align: center;
           line-height: 24px;
-          @include textt(16px, white, $mr);
+          @include textt(16px, white, $ml);
           @media (max-width: 1024px) {
             width:  568px/100*67; 
             margin: 0 auto;
