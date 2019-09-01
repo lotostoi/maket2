@@ -322,6 +322,8 @@
 **********************video*********************************** */
 .video {
   position: relative;
+  width: 1920px;
+  height: 706px;
 }
 
 .video-precenteition {
@@ -422,8 +424,10 @@
 *****************************Excellent for Mobile Devices.************************** --> */
 
 .section-Excellent-for-Mobile-Devices {
-  padding: 184px 384px 179px 874px;
-  background: url(../img/iPhone-in-hand.png) no-repeat;
+  padding: 188px 350px 174px 873px;
+  background: url(../img/iPhone-in-hand.png) no-repeat 421px 77px;
+  @include clearfix();
+  box-sizing: border-box;
 }
 
 .h2-Excellent-for-Mobile-Devices {
@@ -451,9 +455,10 @@
 .ul-Excellent-for-Mobile-Devices {
   margin: 0;
   padding: 0;
-  margin-top: 26px;
   float: left;
   list-style-type: none;
+  margin-top: 30px;
+  margin-left: 98px;
 }
 
 .li-Excellent-for-Mobile-Devices {
@@ -470,17 +475,86 @@
 }
 
 .li-Excellent-for-Mobile-Devices::before {
-  content: '>';
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Montserrat light", "Arial", Sans-serif;
-  font-size: 13px;
+  content: '';
+  display: block;
   width: 21px;
   height: 21px;
   border-radius: 50%;
-  background-color: #c7b299;
-  color:white;
+  background: url(../img/011.svg) no-repeat center;
+  background-size: cover;
+  color: white;
   position: absolute;
+  left: -49px;
+  top: 5px;
 }
 
+/* 
+*****************************Statistic******************************
+*****************************Statistic******************************
+*****************************Statistic******************************
+*****************************Statistic**************************  */
+.aside-statistic {
+  padding: 69px 502px 60px 492px;
+  display: flex;
+  justify-content: space-between;
+  box-sizing: content-box;
+  width: 944px;;
+  background-image: -moz-linear-gradient(0deg, rgb(33, 27, 25) 0%, rgb(78, 52, 39) 100%);
+  background-image: -webkit-linear-gradient(0deg, rgb(33, 27, 25) 0%, rgb(78, 52, 39) 100%);
+  background-image: -ms-linear-gradient(0deg, rgb(33, 27, 25) 0%, rgb(78, 52, 39) 100%);
+}
+
+
+.a-statistic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 145px;
+  text-decoration: none;
+  position: relative;
+}
+
+
+.a-statistic::after {
+  position: absolute;
+  content: "";
+  display: block;
+  border-top: 2px solid #c7b299;
+  width: 30px;
+  bottom: 0;
+  left: 57px;
+}
+.svg-statistic {
+  fill: #c7b299;
+}
+
+.span-count-statistic {
+  margin-top: 19px;
+  @include textt(48px,#fff, $mul);
+}
+
+.h3-statistic {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 29px;
+  margin-top: 9px;
+  font-weight: normal;
+  @include textt(14px,#c7b299, $ml);
+  text-transform: uppercase;
+}
+
+.a-statistic:hover .svg-statistic {
+  fill: #f1e108;
+}
+
+.a-statistic:active .svg-statistic {
+  fill: #f18908;
+}
+
+.a-statistic:hover .h3-statistic {
+  color: #f1e108;
+}
+
+.a-statistic:active .h3-statistic {
+  color: #f18908;
+}

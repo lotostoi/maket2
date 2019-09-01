@@ -23,6 +23,19 @@
 }
 
 @font-face {
+     font-family: 'Montserrat ulra light';
+     src: url('../font/Montserrat/montserrat-ultralight-webfont.eot');
+     src: url('../font/Montserrat/montserrat-ultralight-webfont.eot?#iefix') format('embedded-opentype'),
+          url('../font/Montserrat/montserrat-ultralight-webfont.woff2') format('woff2'),
+          url('../font/Montserrat/montserrat-ultralight-webfont.woff') format('woff'),
+          url('../font/Montserrat/montserrat-ultralight.ttf') format('ttf');
+     font-weight: normal;
+     font-style: normal;
+ }
+ 
+
+
+@font-face {
     font-family: 'Raleway regular';
     src: url('../font/raleway/raleway-regular-webfont.eot');
     src: url('../font/raleway/raleway-regular-webfont.eot#iefix') format('embedded-opentype'),
