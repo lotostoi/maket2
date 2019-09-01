@@ -1205,8 +1205,15 @@
   top: 0;
   width: 1920px;
   height: 706px;
-  background-image: url("../img/fon-photo1.jpg");
+  background-image: none;
   background-size: cover;
+}
+
+.fon-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 190;
 }
 
 .start-video {
@@ -1246,6 +1253,7 @@
   font-family: "Raleway medium", "Arial", Sans-serif;
   font-size: 30px;
   color: white;
+  z-index: 205;
 }
 
 .p-video {
@@ -1259,6 +1267,7 @@
   font-size: 16px;
   color: white;
   line-height: 28px;
+  z-index: 205;
 }
 
 .video-time {
@@ -1271,4 +1280,78 @@
   font-family: "Montserrat regular", "Arial", Sans-serif;
   font-size: 14px;
   color: #c7b299;
+  z-index: 205;
+}
+
+/* 
+<!-- *****************************Excellent for Mobile Devices.*************************
+*****************************Excellent for Mobile Devices.******************************
+*****************************Excellent for Mobile Devices.******************************
+*****************************Excellent for Mobile Devices.************************** --> */
+.section-Excellent-for-Mobile-Devices {
+  padding: 184px 384px 179px 874px;
+  background: url(../img/iPhone-in-hand.png) no-repeat;
+}
+
+.h2-Excellent-for-Mobile-Devices {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  width: 440px;
+  float: left;
+  text-align: left;
+  font-family: "Raleway SemiBold", "Arial", Sans-serif;
+  font-size: 30px;
+  color: #555555;
+}
+
+.p-Excellent-for-Mobile-Devices {
+  margin: 0;
+  padding: 0;
+  margin-top: 26px;
+  font-weight: normal;
+  line-height: 28px;
+  width: 671px;
+  float: left;
+  text-align: left;
+  font-family: "Montserrat light", "Arial", Sans-serif;
+  font-size: 16px;
+  color: #555555;
+}
+
+.ul-Excellent-for-Mobile-Devices {
+  margin: 0;
+  padding: 0;
+  margin-top: 26px;
+  float: left;
+  list-style-type: none;
+}
+
+.li-Excellent-for-Mobile-Devices {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  line-height: 32px;
+  width: 671px;
+  float: left;
+  text-align: left;
+  font-family: "Montserrat light", "Arial", Sans-serif;
+  font-size: 16px;
+  color: #555555;
+  position: relative;
+}
+
+.li-Excellent-for-Mobile-Devices::before {
+  content: '>';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat light", "Arial", Sans-serif;
+  font-size: 13px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #c7b299;
+  color: white;
+  position: absolute;
 }

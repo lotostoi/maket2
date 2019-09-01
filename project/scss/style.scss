@@ -341,8 +341,15 @@
   top: 0;
   width: 1920px;
   height: 706px;
-  background-image: url('../img/fon-photo1.jpg');
+  background-image: none;
   background-size: cover;
+}
+
+.fon-video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 190;
 }
 
 .start-video {
@@ -380,6 +387,7 @@
   width: 900px;
   font-weight: normal;
   @include textt(30px, white, $rm);
+  z-index: 205;
 }
 
 .p-video {
@@ -391,6 +399,7 @@
   width: 590px;
   @include textt(16px, white, $ml);
   line-height: 28px;
+  z-index: 205;
 }
 
 
@@ -403,4 +412,75 @@
   margin-top: 28px;
   width: 90px;
   @include textt(14px, #c7b299, $mr);
+  z-index: 205;
 }
+
+/* 
+<!-- *****************************Excellent for Mobile Devices.*************************
+*****************************Excellent for Mobile Devices.******************************
+*****************************Excellent for Mobile Devices.******************************
+*****************************Excellent for Mobile Devices.************************** --> */
+
+.section-Excellent-for-Mobile-Devices {
+  padding: 184px 384px 179px 874px;
+  background: url(../img/iPhone-in-hand.png) no-repeat;
+}
+
+.h2-Excellent-for-Mobile-Devices {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  width: 440px;
+  float: left;
+  text-align: left;
+  @include textt(30px, #555555, $rsb);
+}
+
+.p-Excellent-for-Mobile-Devices {
+  margin: 0;
+  padding: 0;
+  margin-top: 26px;
+  font-weight: normal;
+  line-height: 28px;
+  width: 671px;
+  float: left;
+  text-align: left;
+  @include textt(16px, #555555, $ml);
+}
+
+.ul-Excellent-for-Mobile-Devices {
+  margin: 0;
+  padding: 0;
+  margin-top: 26px;
+  float: left;
+  list-style-type: none;
+}
+
+.li-Excellent-for-Mobile-Devices {
+  margin: 0;
+  padding: 0;
+  //margin-top: 26px;
+  font-weight: normal;
+  line-height: 32px;
+  width: 671px;
+  float: left;
+  text-align: left;
+  @include textt(16px, #555555, $ml);
+  position: relative;
+}
+
+.li-Excellent-for-Mobile-Devices::before {
+  content: '>';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat light", "Arial", Sans-serif;
+  font-size: 13px;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #c7b299;
+  color:white;
+  position: absolute;
+}
+
