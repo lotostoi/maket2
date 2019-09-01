@@ -27,7 +27,7 @@
   
     .button-Purchase-Now {
       @include button(170px, 5px, #998675);
-      line-height: 50px;
+      min-height: 50px;
       box-shadow: inset 0 -3px 0 #736357;
       @include textt(14px, #fff, $reb);
       border: none;

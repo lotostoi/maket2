@@ -266,7 +266,7 @@
           @media (max-width: 1024px) {
             margin: 0 auto; 
           }
-          line-height: 53px;
+          min-height: 53px;
           border: none;
           @include button(170px, 5px, #998675);
           @include textt(14px, white, $reb);

@@ -409,7 +409,7 @@
 
 .header .carousel .carousel-item .slaider-botton {
   margin: 49px 0 0 726px;
-  line-height: 53px;
+  min-height: 53px;
   border: none;
   display: flex;
   align-items: center;
@@ -807,7 +807,7 @@
   border-radius: 5px;
   background-color: #998675;
   text-decoration: none;
-  line-height: 50px;
+  min-height: 50px;
   box-shadow: inset 0 -3px 0 #736357;
   font-family: "Raleway ExtraBold", "Arial", Sans-serif;
   font-size: 14px;
@@ -884,7 +884,7 @@
   border-radius: 3px;
   background-color: white;
   text-decoration: none;
-  line-height: 32px;
+  min-height: 32px;
   border: 1px solid #ebebeb;
   font-family: "Montserrat light", "Arial", Sans-serif;
   font-size: 14px;
@@ -910,7 +910,7 @@
   border-radius: 3px;
   background-color: white;
   text-decoration: none;
-  line-height: 32px;
+  min-height: 32px;
   border: 1px solid #ebebeb;
   font-family: "Montserrat light", "Arial", Sans-serif;
   font-size: 14px;
@@ -936,7 +936,7 @@
   border-radius: 3px;
   background-color: white;
   text-decoration: none;
-  line-height: 32px;
+  min-height: 32px;
   border: 1px solid #ebebeb;
   font-family: "Montserrat light", "Arial", Sans-serif;
   font-size: 14px;
@@ -962,7 +962,7 @@
   border-radius: 3px;
   background-color: white;
   text-decoration: none;
-  line-height: 32px;
+  min-height: 32px;
   border: 1px solid #ebebeb;
   font-family: "Montserrat light", "Arial", Sans-serif;
   font-size: 14px;
@@ -988,7 +988,7 @@
   border-radius: 3px;
   background-color: white;
   text-decoration: none;
-  line-height: 32px;
+  min-height: 32px;
   border: 1px solid #ebebeb;
   font-family: "Montserrat light", "Arial", Sans-serif;
   font-size: 14px;
@@ -1085,6 +1085,7 @@
 }
 
 .rov1-Our-Latest-Projects .p1-Our-Latest-Projects {
+  display: block;
   margin: 22px 0 0 27px;
   position: relative;
   font-family: "Raleway medium", "Arial", Sans-serif;
@@ -1104,6 +1105,7 @@
 }
 
 .rov1-Our-Latest-Projects .p2-Our-Latest-Projects {
+  display: block;
   margin: 7px 0 25px 27px;
   font-family: "Montserrat regular", "Arial", Sans-serif;
   font-size: 14px;
@@ -1156,7 +1158,7 @@
 
 .button-Our-Latest-Projectss {
   margin: 44px auto 0;
-  line-height: 50px;
+  min-height: 50px;
   border: none;
   display: flex;
   align-items: center;
@@ -1258,7 +1260,7 @@
   padding: 0;
   text-align: center;
   margin-top: 40px;
-  width: 900px;
+  width: 500px;
   font-weight: normal;
   font-family: "Raleway medium", "Arial", Sans-serif;
   font-size: 30px;
@@ -1300,8 +1302,10 @@
 *****************************Excellent for Mobile Devices.************************** --> */
 .section-Excellent-for-Mobile-Devices {
   padding: 188px 350px 174px 873px;
-  background: url(../img/iPhone-in-hand.png) no-repeat 421px 77px;
+  background: url(../img/iPhone-in-hand.png) no-repeat center;
+  background-size: cover;
   box-sizing: border-box;
+  background-color: #fbfaf8;
 }
 
 .section-Excellent-for-Mobile-Devices::after {
@@ -1379,7 +1383,7 @@
 *****************************Statistic******************************
 *****************************Statistic**************************  */
 .aside-statistic {
-  padding: 69px 502px 60px 492px;
+  padding: 69px 484px 60px 492px;
   display: flex;
   justify-content: space-between;
   box-sizing: content-box;
@@ -1420,6 +1424,7 @@
 }
 
 .h3-statistic {
+  text-align: center;
   margin: 0;
   padding: 0;
   margin-bottom: 29px;
@@ -1432,7 +1437,7 @@
 }
 
 .a-statistic:hover .svg-statistic {
-  fill: #f1e108;
+  fill: #08f11b;
 }
 
 .a-statistic:active .svg-statistic {
@@ -1440,9 +1445,190 @@
 }
 
 .a-statistic:hover .h3-statistic {
-  color: #f1e108;
+  color: #08f11b;
 }
 
 .a-statistic:active .h3-statistic {
   color: #f18908;
+}
+
+/* <!-- ************************Resent posts******************************
+*****************************Resent posts******************************
+*****************************Resent posts******************************
+*****************************Resent posts************************** --> */
+.resent-posts {
+  padding: 78px 345px 81px 374px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h2-resent-posts {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Raleway SemiBold", "Arial", Sans-serif;
+  font-size: 30px;
+  color: #555555;
+  font-weight: normal;
+}
+
+.p-resent-posts {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 781px;
+  font-family: "Montserrat light", "Arial", Sans-serif;
+  font-size: 16px;
+  color: #8c8c8c;
+  line-height: 28px;
+  font-weight: normal;
+  margin-top: 16px;
+  margin-bottom: 33px;
+}
+
+.cont-resent-posts {
+  display: flex;
+  justify-content: space-between;
+  width: 1171px;
+}
+
+.parts-resent-posts {
+  width: 370px;
+  position: relative;
+  border: 1px solid #f8f8f8;
+  box-sizing: content-box;
+}
+
+.date {
+  position: absolute;
+  width: 50px;
+  height: 60px;
+  border-radius: 5px;
+  top: 21px;
+  left: 21px;
+}
+
+.namber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+  background-color: #363636;
+  text-align: center;
+  min-height: 35px;
+  font-family: "Montserrat light", "Arial", Sans-serif;
+  font-size: 24px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.munth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 5px 5px;
+  background-color: #252525;
+  text-align: center;
+  min-height: 25px;
+  font-family: "Raleway regular", "Arial", Sans-serif;
+  font-size: 12px;
+  color: #fff;
+  font-weight: normal;
+}
+
+.h3-resent-posts {
+  margin: 0;
+  padding: 0;
+  margin-left: 28px;
+  text-align: left;
+  width: 300px;
+  font-family: "Raleway medium", "Arial", Sans-serif;
+  font-size: 20px;
+  color: #555555;
+  font-weight: normal;
+  margin-top: 22px;
+  margin-bottom: 15px;
+}
+
+.span-resent-posts {
+  margin: 0;
+  padding: 0;
+  margin-left: 28px;
+  text-align: left;
+  width: 302px;
+  line-height: 22px;
+  font-family: "Montserrat light", "Arial", Sans-serif;
+  font-size: 14px;
+  color: #8c8c8c;
+  font-weight: normal;
+  margin-top: 15px;
+  margin-bottom: 18px;
+}
+
+.summary-resent-posts {
+  margin: 0;
+  padding: 0;
+  margin-left: 28px;
+  text-align: left;
+  width: 302px;
+  line-height: 22px;
+  font-family: "Montserrat light", "Arial", Sans-serif;
+  font-size: 14px;
+  color: #c7b299;
+  font-weight: normal;
+  margin-bottom: 26px;
+  position: relative;
+  outline: none;
+}
+
+.summary-resent-posts::-webkit-details-marker {
+  color: #c7b299;
+  position: absolute;
+  left: 100px;
+  top: 5px;
+}
+
+.summary {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: 302px;
+  line-height: 22px;
+  font-family: "Montserrat light", "Arial", Sans-serif;
+  font-size: 14px;
+  color: #8c8c8c;
+  font-weight: normal;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-left: 28px;
+  text-align: justify;
+}
+
+.parts-resent-posts:hover {
+  background-color: #362f2d;
+}
+
+.parts-resent-posts:hover .h3-resent-posts {
+  color: #c7b299;
+}
+
+.parts-resent-posts:hover .span-resent-posts {
+  color: #f5f5f5;
+}
+
+.parts-resent-posts:hover .summary {
+  color: #f5f5f5;
+}
+
+.parts-resent-posts:hover .img-resent-posts {
+  filter: brightness(20%);
+}
+
+.parts-resent-posts:hover .namber {
+  background-color: #c7b299;
+}
+
+.parts-resent-posts:hover .munth {
+  background-color: #a48d72;
 }

@@ -60,7 +60,7 @@
   .button-Purchase-Now {
     margin: 5px 1px 0 0;
     @include button(170px, 5px, #998675);
-    line-height: 50px;
+    min-height: 50px;
     box-shadow: inset 0 -3px 0 #736357;
     @include textt(14px, #fff, $reb);
     border: none;
@@ -116,7 +116,7 @@
 
   .button-Our-Latest-Projects:nth-child(1) {
     @include button(70px, 3px, white);
-    line-height: 32px;
+    min-height: 32px;
     border: 1px solid #ebebeb;
     @include textt(14px, #000, $ml);
     @include hover-and-activ-color-an-back-color(rgb(248, 248, 248), #998675, rgb(255, 255, 255), rgb(216, 194, 154));
@@ -124,7 +124,7 @@
 
   .button-Our-Latest-Projects:nth-child(2) {
     @include button(120px, 3px, white);
-    line-height: 32px;
+    min-height: 32px;
     border: 1px solid #ebebeb;
     @include textt(14px, #000, $ml);
     @include hover-and-activ-color-an-back-color(rgb(248, 248, 248), #998675, rgb(255, 255, 255), rgb(216, 194, 154));
@@ -132,7 +132,7 @@
 
   .button-Our-Latest-Projects:nth-child(3) {
     @include button(120px, 3px, white);
-    line-height: 32px;
+    min-height: 32px;
     border: 1px solid #ebebeb;
     @include textt(14px, #000, $ml);
     @include hover-and-activ-color-an-back-color(rgb(248, 248, 248), #998675, rgb(255, 255, 255), rgb(216, 194, 154));
@@ -140,7 +140,7 @@
 
   .button-Our-Latest-Projects:nth-child(4) {
     @include button(120px, 3px, white);
-    line-height: 32px;
+    min-height: 32px;
     border: 1px solid #ebebeb;
     @include textt(14px, #000, $ml);
     @include hover-and-activ-color-an-back-color(rgb(248, 248, 248), #998675, rgb(255, 255, 255), rgb(216, 194, 154));
@@ -148,7 +148,7 @@
 
   .button-Our-Latest-Projects:nth-child(5) {
     @include button(135px, 3px, white);
-    line-height: 32px;
+    min-height: 32px;
     border: 1px solid #ebebeb;
     @include textt(14px, #000, $ml);
     @include hover-and-activ-color-an-back-color(rgb(248, 248, 248), #998675, rgb(255, 255, 255), rgb(216, 194, 154));
@@ -234,6 +234,7 @@
   }
 
   .p1-Our-Latest-Projects {
+    display: block;
     margin: 22px 0 0 27px;
     position: relative;
     @include textt(20px, #d5c5b2, $rm);
@@ -251,6 +252,7 @@
   }
 
   .p2-Our-Latest-Projects {
+    display: block;
     margin: 7px 0 25px 27px;
     @include textt(14px, #d1d1d1, $mr);
   }
@@ -307,7 +309,7 @@
     margin: 0 auto;
   }
 
-  line-height: 50px;
+  min-height: 50px;
   border: none;
   @include button(170px, 5px, #998675);
   @include textt(14px, white, $reb);
@@ -386,7 +388,7 @@
   padding: 0;
   text-align: center;
   margin-top: 40px;
-  width: 900px;
+  width: 500px;
   font-weight: normal;
   @include textt(30px, white, $rm);
   z-index: 205;
@@ -403,8 +405,6 @@
   line-height: 28px;
   z-index: 205;
 }
-
-
 
 .video-time {
   margin: 0;
@@ -425,9 +425,11 @@
 
 .section-Excellent-for-Mobile-Devices {
   padding: 188px 350px 174px 873px;
-  background: url(../img/iPhone-in-hand.png) no-repeat 421px 77px;
+  background: url(../img/iPhone-in-hand.png) no-repeat center;
+  background-size: cover;
   @include clearfix();
   box-sizing: border-box;
+  background-color: #fbfaf8;
 }
 
 .h2-Excellent-for-Mobile-Devices {
@@ -494,16 +496,16 @@
 *****************************Statistic******************************
 *****************************Statistic**************************  */
 .aside-statistic {
-  padding: 69px 502px 60px 492px;
+  padding: 69px 484px 60px 492px;
   display: flex;
   justify-content: space-between;
   box-sizing: content-box;
-  width: 944px;;
+  width: 944px;
+  ;
   background-image: -moz-linear-gradient(0deg, rgb(33, 27, 25) 0%, rgb(78, 52, 39) 100%);
   background-image: -webkit-linear-gradient(0deg, rgb(33, 27, 25) 0%, rgb(78, 52, 39) 100%);
   background-image: -ms-linear-gradient(0deg, rgb(33, 27, 25) 0%, rgb(78, 52, 39) 100%);
 }
-
 
 .a-statistic {
   display: flex;
@@ -514,7 +516,6 @@
   position: relative;
 }
 
-
 .a-statistic::after {
   position: absolute;
   content: "";
@@ -524,27 +525,29 @@
   bottom: 0;
   left: 57px;
 }
+
 .svg-statistic {
   fill: #c7b299;
 }
 
 .span-count-statistic {
   margin-top: 19px;
-  @include textt(48px,#fff, $mul);
+  @include textt(48px, #fff, $mul);
 }
 
 .h3-statistic {
+  text-align: center;
   margin: 0;
   padding: 0;
   margin-bottom: 29px;
   margin-top: 9px;
   font-weight: normal;
-  @include textt(14px,#c7b299, $ml);
+  @include textt(14px, #c7b299, $ml);
   text-transform: uppercase;
 }
 
 .a-statistic:hover .svg-statistic {
-  fill: #f1e108;
+  fill: #08f11b;
 }
 
 .a-statistic:active .svg-statistic {
@@ -552,9 +555,180 @@
 }
 
 .a-statistic:hover .h3-statistic {
-  color: #f1e108;
+  color: #08f11b;
 }
 
 .a-statistic:active .h3-statistic {
   color: #f18908;
 }
+
+/* <!-- ************************Resent posts******************************
+*****************************Resent posts******************************
+*****************************Resent posts******************************
+*****************************Resent posts************************** --> */
+.resent-posts {
+  padding: 78px 345px 81px 374px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.h2-resent-posts {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  @include textt(30px, #555555, $rsb);
+  font-weight: normal;
+}
+
+.p-resent-posts {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  width: 781px;
+  font-family: "Montserrat light", "Arial", Sans-serif;
+  font-size: 16px;
+  color: #8c8c8c;
+  line-height: 28px;
+  font-weight: normal;
+  margin-top: 16px;
+  margin-bottom: 33px;
+}
+
+.cont-resent-posts {
+  display: flex;
+  justify-content: space-between;
+  width: 1171px;
+}
+
+.parts-resent-posts {
+  width: 370px;
+  position: relative;
+  border: 1px solid #f8f8f8;
+  box-sizing: content-box;
+}
+
+.img-resent-posts {}
+
+.date {
+  position: absolute;
+  width: 50px;
+  height: 60px;
+  border-radius: 5px;
+  top: 21px;
+  left: 21px;
+}
+
+.namber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px 5px 0 0;
+  background-color: #363636;
+  text-align: center;
+  min-height: 35px;
+  @include textt(24px, #fff, $ml);
+  font-weight: normal;
+}
+
+.munth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 5px 5px;
+  background-color: #252525;
+  text-align: center;
+  min-height: 25px;
+  @include textt(12px, #fff, $rr);
+  font-weight: normal;
+}
+
+.h3-resent-posts {
+  margin: 0;
+  padding: 0;
+  margin-left: 28px;
+  text-align: left;
+  width: 300px;
+  @include textt(20px, #555555, $rm);
+  font-weight: normal;
+  margin-top: 22px;
+  margin-bottom: 15px;
+}
+
+.span-resent-posts {
+  margin: 0;
+  padding: 0;
+  margin-left: 28px;
+  text-align: left;
+  width: 302px;
+  line-height: 22px;
+  @include textt(14px, #8c8c8c, $ml);
+  font-weight: normal;
+  margin-top: 15px;
+  margin-bottom: 18px;
+}
+
+
+.summary-resent-posts {
+  margin: 0;
+  padding: 0;
+  margin-left: 28px;
+  text-align: left;
+  width: 302px;
+  line-height: 22px;
+  @include textt(14px, #c7b299, $ml);
+  font-weight: normal;
+  margin-bottom: 26px;
+  position: relative;
+  outline: none;
+}
+
+.summary-resent-posts::-webkit-details-marker {
+  color: #c7b299;
+  position: absolute;
+  left: 100px;
+  top: 5px;
+}
+
+.summary {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  width: 302px;
+  line-height: 22px;
+  @include textt(14px, #8c8c8c, $ml);
+  font-weight: normal;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  margin-left: 28px;
+  text-align: justify;
+}
+
+.parts-resent-posts:hover {
+  background-color: #362f2d;
+}
+
+.parts-resent-posts:hover .h3-resent-posts {
+  color: #c7b299;
+}
+
+.parts-resent-posts:hover .span-resent-posts {
+  color: #f5f5f5;
+}
+
+.parts-resent-posts:hover .summary {
+  color: #f5f5f5;
+}
+
+.parts-resent-posts:hover .img-resent-posts {
+  filter: brightness(20%);
+}
+
+.parts-resent-posts:hover  .namber {
+  background-color: #c7b299;
+}
+.parts-resent-posts:hover .munth{
+  background-color: #a48d72;
+}
+
+
