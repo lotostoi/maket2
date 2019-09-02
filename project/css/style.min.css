@@ -1637,3 +1637,76 @@
 .a-logo-aside {
   display: block;
 }
+
+/* ***********************************information********************************
+***********************************information***********************************
+***********************************information***********************************
+***********************************information*********************************** */
+.information {
+  padding: 76px 375px 76px 375px;
+  background-color: #191919;
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  box-sizing: content-box;
+}
+
+.wahom {
+  width: 267px;
+}
+
+.logo-taxt-information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  width: 179px;
+}
+
+.logo-information {
+  fill: white;
+}
+
+.logo-information {
+  font-family: "Raleway regular", "Arial", Sans-serif;
+  font-size: 34px;
+  color: #fff;
+  letter-spacing: -1px;
+}
+
+.p-wahom-information,
+.p-summury-information {
+  font-family: "Montserrat light", "Arial", Sans-serif;
+  font-size: 14px;
+  color: #555555;
+  line-height: 24px;
+  margin-top: 30px;
+}
+
+.summury-information {
+  font-family: "Montserrat regular", "Arial", Sans-serif;
+  font-size: 14px;
+  color: #d1d1d1;
+  margin-top: 30px;
+  position: relative;
+  outline: none;
+}
+
+.summury-information::-webkit-details-marker {
+  color: #d1d1d1;
+  position: absolute;
+  left: 90px;
+  top: 3px;
+}
+
+.recets-posts {
+  width: 273px;
+}
+
+.our-twitter {
+  width: 276x;
+}
+
+.dribbble-widget {
+  width: 267px;
+}

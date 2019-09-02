@@ -583,8 +583,7 @@
   box-sizing: content-box;
 }
 
-.img-resent-posts {
-}
+.img-resent-posts {}
 
 .date {
   position: absolute;
@@ -702,6 +701,7 @@
 .parts-resent-posts:hover .namber {
   background-color: #c7b299;
 }
+
 .parts-resent-posts:hover .munth {
   background-color: #a48d72;
 }
@@ -716,12 +716,15 @@
 .a-svg-pagination {
   fill: #d1d1d1;
 }
+
 .a-svg-pagination:hover {
   fill: #cab79f;
 }
+
 .a-svg-pagination:active {
   fill: #c98c42;
 }
+
 /* ***********************************aside-grup-logos***********************************
 ***********************************aside-grup-logos***********************************
 ***********************************aside-grup-logos***********************************
@@ -736,6 +739,76 @@
   justify-content: space-between;
   width: 1100px;
 }
+
 .a-logo-aside {
   display: block;
+}
+
+/* ***********************************information********************************
+***********************************information***********************************
+***********************************information***********************************
+***********************************information*********************************** */
+.information {
+  padding: 76px 375px 76px 375px;
+  background-color: #191919;
+  display: flex;
+  justify-content: space-between;
+  width: 1170px;
+  box-sizing: content-box;
+}
+
+.wahom {
+  width: 267px;
+}
+
+.logo-taxt-information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-decoration: none;
+  width: 179px;
+}
+
+.logo-information {
+  fill: white;
+}
+
+.logo-information {
+  @include textt(34px, #fff, $rr);
+  letter-spacing: -1px;
+}
+
+
+.p-wahom-information,
+.p-summury-information {
+  @include textt(14px, #555555, $ml); 
+  line-height: 24px;
+  margin-top: 30px;  
+}
+
+.summury-information {
+  @include textt(14px, #d1d1d1, $mr); 
+  margin-top: 30px;
+  position: relative; 
+  outline: none;
+}
+
+.summury-information::-webkit-details-marker {
+  color: #d1d1d1;
+  position: absolute;
+  left: 90px;
+  top: 3px;
+}
+
+
+.recets-posts {
+  width: 273px;
+}
+
+.our-twitter {
+  width: 276x;
+}
+
+.dribbble-widget {
+  width: 267px;
 }
