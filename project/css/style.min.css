@@ -598,8 +598,8 @@
   width: 270px;
   height: inherit;
   text-align: center;
-  position: relative;
   text-decoration: none;
+  position: relative;
 }
 
 .icon {
@@ -607,7 +607,7 @@
 }
 
 .h3-help {
-  margin-top: 83px;
+  margin-top: 25px;
   width: 269px;
   font-family: "Raleway SemiBold", "Arial", Sans-serif;
   font-size: 22px;
@@ -635,27 +635,19 @@
 }
 
 .help:nth-child(1) > svg {
-  position: absolute;
-  right: 113px;
-  top: 10px;
+  margin-top: 10px;
 }
 
 .help:nth-child(2) > svg {
-  position: absolute;
-  right: 114px;
-  top: 19px;
+  margin-top: 19px;
 }
 
 .help:nth-child(3) > svg {
-  position: absolute;
-  right: 116px;
-  top: 15px;
+  margin-top: 15px;
 }
 
 .help:nth-child(4) > svg {
-  position: absolute;
-  right: 108px;
-  top: 22px;
+  margin-top: 22px;
 }
 
 .help:hover .p-help::after {
@@ -832,7 +824,7 @@
 **********************Our-Latest-Projects***********************
 **********************Our-Latest-Projects*********************** */
 .Our-Latest-Projects {
-  padding: 75px 343px 78px 374px;
+  padding: 75px 376px 78px 374px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1070,20 +1062,6 @@
   background-color: #2f2f2f;
 }
 
-.rov1-Our-Latest-Projects .a-Our-Latest-Projects::before {
-  content: "";
-  background-image: -moz-linear-gradient(0deg, #211b19 0%, rgb rgba(39, 33, 31, 0.8) 0%);
-  background-image: -webkit-linear-gradient(0deg, #1d1716 0%, rgba(39, 33, 31, 0.8) 0%);
-  background-image: -ms-linear-gradient(0deg, #211b19 0%, rgba(39, 33, 31, 0.8) 0%);
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 370px;
-  height: 236px;
-  z-index: 169;
-  display: none;
-}
-
 .rov1-Our-Latest-Projects .p1-Our-Latest-Projects {
   display: block;
   margin: 22px 0 0 27px;
@@ -1124,18 +1102,8 @@
   display: block;
 }
 
-.rov1-Our-Latest-Projects .a-Our-Latest-Projects:hover::before {
-  display: block;
-  content: "";
-  background-image: -moz-linear-gradient(0deg, #211b19 0%, rgb rgba(39, 33, 31, 0.7) 0%);
-  background-image: -webkit-linear-gradient(0deg, #1d1716 0%, rgba(39, 33, 31, 0.7) 0%);
-  background-image: -ms-linear-gradient(0deg, #211b19 0%, rgba(39, 33, 31, 0.7) 0%);
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 370px;
-  height: 236px;
-  z-index: 169;
+.rov1-Our-Latest-Projects .a-Our-Latest-Projects:hover .img-Our-Latest-Projects {
+  filter: brightness(20%);
 }
 
 .rov1-Our-Latest-Projects .a-Our-Latest-Projects:hover .p1-Our-Latest-Projects::before {
@@ -1364,7 +1332,7 @@
 }
 
 .li-Excellent-for-Mobile-Devices::before {
-  content: '';
+  content: "";
   display: block;
   width: 21px;
   height: 21px;
@@ -1437,7 +1405,7 @@
 }
 
 .a-statistic:hover .svg-statistic {
-  fill: #08f11b;
+  fill: #9b958e;
 }
 
 .a-statistic:active .svg-statistic {
@@ -1445,7 +1413,7 @@
 }
 
 .a-statistic:hover .h3-statistic {
-  color: #08f11b;
+  color: #9b958e;
 }
 
 .a-statistic:active .h3-statistic {
@@ -1496,7 +1464,7 @@
 .parts-resent-posts {
   width: 370px;
   position: relative;
-  border: 1px solid #f8f8f8;
+  outline: 1px solid #f8f8f8;
   box-sizing: content-box;
 }
 
@@ -1600,7 +1568,7 @@
   color: #8c8c8c;
   font-weight: normal;
   margin-top: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   margin-left: 28px;
   text-align: justify;
 }
@@ -1631,4 +1599,41 @@
 
 .parts-resent-posts:hover .munth {
   background-color: #a48d72;
+}
+
+.cont-pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 41px;
+  width: 65px;
+}
+
+.a-svg-pagination {
+  fill: #d1d1d1;
+}
+
+.a-svg-pagination:hover {
+  fill: #cab79f;
+}
+
+.a-svg-pagination:active {
+  fill: #c98c42;
+}
+
+/* ***********************************aside-grup-logos***********************************
+***********************************aside-grup-logos***********************************
+***********************************aside-grup-logos***********************************
+***********************************aside-grup-logos*********************************** */
+.aside-grup-logos {
+  padding: 138px 412px 132px 409px;
+  background: url(../img/Background-aside-logo.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1100px;
+}
+
+.a-logo-aside {
+  display: block;
 }

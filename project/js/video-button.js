@@ -25,7 +25,7 @@
 
  videoEl.addEventListener('play', function () {
 
-    $('#controls').fadeOut(3000);  
+    $('#controls').fadeOut(500);  
     document.getElementById('controls').style.backgroundImage = 'none';
  }, false);
 

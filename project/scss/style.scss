@@ -76,7 +76,7 @@
 **********************Our-Latest-Projects*********************** */
 
 .Our-Latest-Projects {
-  padding: 75px 343px 78px 374px;
+  padding: 75px 376px 78px 374px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -219,20 +219,6 @@
     background-color: #2f2f2f;
   }
 
-  .a-Our-Latest-Projects::before {
-    content: "";
-    background-image: -moz-linear-gradient(0deg, rgb(33, 27, 25) 0%, rgb rgba(39, 33, 31, 0.8) 0%);
-    background-image: -webkit-linear-gradient(0deg, rgb(29, 23, 22) 0%, rgba(39, 33, 31, 0.8) 0%);
-    background-image: -ms-linear-gradient(0deg, rgb(33, 27, 25) 0%, rgba(39, 33, 31, 0.8) 0%);
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 370px;
-    height: 236px;
-    z-index: 169;
-    display: none;
-  }
-
   .p1-Our-Latest-Projects {
     display: block;
     margin: 22px 0 0 27px;
@@ -269,18 +255,8 @@
     display: block;
   }
 
-  .a-Our-Latest-Projects:hover::before {
-    display: block;
-    content: "";
-    background-image: -moz-linear-gradient(0deg, rgb(33, 27, 25) 0%, rgb rgba(39, 33, 31, 0.7) 0%);
-    background-image: -webkit-linear-gradient(0deg, rgb(29, 23, 22) 0%, rgba(39, 33, 31, 0.7) 0%);
-    background-image: -ms-linear-gradient(0deg, rgb(33, 27, 25) 0%, rgba(39, 33, 31, 0.7) 0%);
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 370px;
-    height: 236px;
-    z-index: 169;
+  .a-Our-Latest-Projects:hover .img-Our-Latest-Projects {
+    filter: brightness(20%);
   }
 
   .a-Our-Latest-Projects:hover .p1-Our-Latest-Projects::before {
@@ -477,7 +453,7 @@
 }
 
 .li-Excellent-for-Mobile-Devices::before {
-  content: '';
+  content: "";
   display: block;
   width: 21px;
   height: 21px;
@@ -501,7 +477,6 @@
   justify-content: space-between;
   box-sizing: content-box;
   width: 944px;
-  ;
   background-image: -moz-linear-gradient(0deg, rgb(33, 27, 25) 0%, rgb(78, 52, 39) 100%);
   background-image: -webkit-linear-gradient(0deg, rgb(33, 27, 25) 0%, rgb(78, 52, 39) 100%);
   background-image: -ms-linear-gradient(0deg, rgb(33, 27, 25) 0%, rgb(78, 52, 39) 100%);
@@ -547,7 +522,7 @@
 }
 
 .a-statistic:hover .svg-statistic {
-  fill: #08f11b;
+  fill: #9b958e;
 }
 
 .a-statistic:active .svg-statistic {
@@ -555,7 +530,7 @@
 }
 
 .a-statistic:hover .h3-statistic {
-  color: #08f11b;
+  color: #9b958e;
 }
 
 .a-statistic:active .h3-statistic {
@@ -604,11 +579,12 @@
 .parts-resent-posts {
   width: 370px;
   position: relative;
-  border: 1px solid #f8f8f8;
+  outline: 1px solid #f8f8f8;
   box-sizing: content-box;
 }
 
-.img-resent-posts {}
+.img-resent-posts {
+}
 
 .date {
   position: absolute;
@@ -668,7 +644,6 @@
   margin-bottom: 18px;
 }
 
-
 .summary-resent-posts {
   margin: 0;
   padding: 0;
@@ -699,7 +674,7 @@
   @include textt(14px, #8c8c8c, $ml);
   font-weight: normal;
   margin-top: 5px;
-  margin-bottom: 15px;
+  margin-bottom: 25px;
   margin-left: 28px;
   text-align: justify;
 }
@@ -724,11 +699,43 @@
   filter: brightness(20%);
 }
 
-.parts-resent-posts:hover  .namber {
+.parts-resent-posts:hover .namber {
   background-color: #c7b299;
 }
-.parts-resent-posts:hover .munth{
+.parts-resent-posts:hover .munth {
   background-color: #a48d72;
 }
 
+.cont-pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 41px;
+  width: 65px;
+}
 
+.a-svg-pagination {
+  fill: #d1d1d1;
+}
+.a-svg-pagination:hover {
+  fill: #cab79f;
+}
+.a-svg-pagination:active {
+  fill: #c98c42;
+}
+/* ***********************************aside-grup-logos***********************************
+***********************************aside-grup-logos***********************************
+***********************************aside-grup-logos***********************************
+***********************************aside-grup-logos*********************************** */
+
+.aside-grup-logos {
+  padding: 138px 412px 132px 409px;
+  background: url(../img/Background-aside-logo.png) no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1100px;
+}
+.a-logo-aside {
+  display: block;
+}
