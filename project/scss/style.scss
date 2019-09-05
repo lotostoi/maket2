@@ -26,6 +26,8 @@
 @import "reliz-ideas";
 
 .Purchase-Now {
+  width: $max;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -76,6 +78,8 @@
 **********************Our-Latest-Projects*********************** */
 
 .Our-Latest-Projects {
+  width: $max;
+  box-sizing: border-box;
   padding: 75px 376px 78px 374px;
   display: flex;
   flex-direction: column;
@@ -321,8 +325,10 @@
   top: 0;
   width: 1920px;
   height: 706px;
+  /*  background: url(../img/fon-photo1.jpg) no-repeat;
   background-image: none;
   background-size: cover;
+ */
 }
 
 .fon-video {
@@ -542,6 +548,8 @@
 *****************************Resent posts******************************
 *****************************Resent posts************************** --> */
 .resent-posts {
+  width: $max;
+  box-sizing: border-box;
   padding: 78px 345px 81px 374px;
   display: flex;
   flex-direction: column;
@@ -583,7 +591,6 @@
   box-sizing: content-box;
 }
 
-.img-resent-posts {}
 
 .date {
   position: absolute;
@@ -648,20 +655,18 @@
   padding: 0;
   margin-left: 28px;
   text-align: left;
-  width: 302px;
+  width: 102px;
   line-height: 22px;
   @include textt(14px, #c7b299, $ml);
   font-weight: normal;
   margin-bottom: 26px;
-  position: relative;
   outline: none;
 }
 
 .summary-resent-posts::-webkit-details-marker {
   color: #c7b299;
-  position: absolute;
-  left: 100px;
-  top: 5px;
+   float: right;
+   margin-top: 6px;
 }
 
 .summary {
@@ -731,17 +736,44 @@
 ***********************************aside-grup-logos*********************************** */
 
 .aside-grup-logos {
-  padding: 138px 412px 132px 409px;
+  width: $max;
+  box-sizing: border-box;
+  padding: 138px 400px 132px 400px;
   background: url(../img/Background-aside-logo.png) no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1100px;
+ 
 }
 
 .a-logo-aside {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 230px;
+  height: 230px;
+}
+
+.aside-grup-logos > a:nth-child(1) > img {
+  margin-right: 9px;
+}
+.aside-grup-logos > a:nth-child(2) > img {
+  margin-right: 4px;
+}
+
+.a-logo-aside:hover {
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 22px 12px #ffa700;
+  -moz-box-shadow: 0px 0px 22px 12px #ffa700;
+  box-shadow: 0px 0px 22px 12px #ffa700;
+}
+
+.a-logo-aside:active {
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 22px 12px #b0517c;
+  -moz-box-shadow: 0px 0px 22px 12px #b0517c;
+  box-shadow: 0px 0px 22px 12px #b0517c;
 }
 
 /* ***********************************information********************************
@@ -749,12 +781,12 @@
 ***********************************information***********************************
 ***********************************information*********************************** */
 .information {
-  padding: 76px 375px 76px 375px;
+  width: $max;
+  box-sizing: border-box;
+  padding: 76px 366px 76px 365px;
   background-color: #191919;
   display: flex;
   justify-content: space-between;
-  width: 1170px;
-  box-sizing: content-box;
 }
 
 .wahom {
@@ -773,42 +805,268 @@
   fill: white;
 }
 
-.logo-information {
+.logo-information-text {
   @include textt(34px, #fff, $rr);
   letter-spacing: -1px;
 }
 
+.logo-taxt-information:hover .logo-information {
+  fill: rgb(197, 117, 88);
+}
+.logo-taxt-information:active .logo-information {
+  fill: rgb(206, 70, 20);
+}
 
-.p-wahom-information,
-.p-summury-information {
-  @include textt(14px, #555555, $ml); 
+.logo-taxt-information:hover .logo-information-text {
+  color: rgb(197, 117, 88);
+}
+.logo-taxt-information:active .logo-information-text {
+  color: rgb(206, 70, 20);
+}
+
+.p-wahom-information {
+  @include textt(14px, #555555, $ml);
   line-height: 24px;
-  margin-top: 30px;  
+  margin-top: 30px;
+}
+
+.p-summury-information {
+  @include textt(14px, #555555, $ml);
+  line-height: 24px;
+  margin-top: 10px;
 }
 
 .summury-information {
-  @include textt(14px, #d1d1d1, $mr); 
+  @include textt(14px, #d1d1d1, $mr);
   margin-top: 30px;
-  position: relative; 
+  position: relative;
   outline: none;
+  width: 110px;
 }
 
 .summury-information::-webkit-details-marker {
   color: #d1d1d1;
-  position: absolute;
-  left: 90px;
-  top: 3px;
+  float: right;
+  margin-top: 2px;
 }
 
-
 .recets-posts {
+  margin-top: 22px;
   width: 273px;
 }
 
+.a-content-recets-posts {
+  display: block;
+  padding: 19px 0 20px 0;
+  text-decoration: none;
+}
+
+.recets-posts .a-content-recets-posts:nth-of-type(1) {
+  margin-top: 10px;
+}
+
+.recets-posts .a-content-recets-posts:nth-of-type(1),
+.recets-posts .a-content-recets-posts:nth-of-type(2) {
+  border-bottom: 1px solid #252525;
+}
+
+.h4-information {
+  margin: 0;
+  padding: 0;
+  @include textt(24px, #fff, $rb);
+  font-weight: normal;
+}
+
+.span-recets-posts {
+  display: block;
+  margin: 0 0 8px 0;
+  padding: 0;
+  @include textt(12px, #363636, $ml);
+  font-weight: normal;
+}
+
+.p-recets-posts {
+  padding: 0;
+  @include textt(14px, #555555, $ml);
+  font-weight: normal;
+  line-height: 20px;
+}
+
+.a-content-recets-posts:hover .span-recets-posts {
+  color: #fff;
+}
+
+.a-content-recets-posts:hover .p-recets-posts {
+  color: #c7b299;
+}
+
 .our-twitter {
-  width: 276x;
+  margin-top: 22px;
+  width: 276px;
+}
+
+.p-twitter {
+  padding: 0;
+  @include textt(14px, #555555, $ml);
+  font-weight: normal;
+  line-height: 20px;
+}
+
+.twitter-date {
+  display: block;
+  margin: 0 0 0 0;
+  padding: 0;
+  @include textt(12px, #363636, $ml);
+  font-weight: normal;
+}
+
+.blue {
+  color: #00bff3;
+}
+
+.twitter-grye {
+  color: #959595;
+}
+
+.twitter-post {
+  padding: 17px 0 22px 0;
+  text-decoration: none;
+  display: block;
+}
+
+.our-twitter .twitter-post:nth-of-type(1),
+.our-twitter .twitter-post:nth-of-type(2) {
+  border-bottom: 1px solid #252525;
+}
+
+.our-twitter .twitter-post:nth-of-type(1) {
+  margin-top: 10px;
+}
+
+.twitter-post:hover .twitter-date {
+  color: #fff;
+}
+
+.twitter-post:hover .p-twitter {
+  color: #c7b299;
 }
 
 .dribbble-widget {
+  margin-top: 22px;
   width: 267px;
+}
+
+.cont-widget {
+  margin: 40px 0 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.a-widget {
+  width: 130px;
+  height: 98px;
+  display: block;
+  text-decoration: none;
+}
+
+.a-widget:hover {
+  filter: brightness(70%);
+}
+
+.a-widget:active {
+  filter: brightness(20%);
+}
+
+.widget {
+  margin: 0;
+  background-color: gray;
+}
+
+.a-widget:nth-child(3),
+.a-widget:nth-child(4) {
+  margin-top: 10px;
+}
+/* *****************************footer*****************************
+*****************************footer*****************************
+*****************************footer***************************** */
+.footer-main {
+  width: $max;
+  box-sizing: border-box;
+  padding: 42px 375px 40px 375px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #111111;
+}
+
+.first-block-footer {
+  display: flex;
+}
+
+.a-first-block-footer {
+  display: block;
+  text-decoration: none;
+  @include textt(13px, #353535, $ml);
+}
+
+.a-first-block-footer:hover {
+  color: #c7b299;
+}
+.a-first-block-footer:active {
+  color: #ce7810;
+}
+
+.a-first-block-footer:nth-of-type(1) {
+  text-align: left;
+  width: 174px;
+}
+
+.a-first-block-footer:nth-of-type(2) {
+  text-align: center;
+  width: 111px;
+}
+.a-first-block-footer:nth-of-type(3) {
+  text-align: center;
+  width: 51px;
+}
+.a-first-block-footer:nth-of-type(4) {
+  text-align: center;
+  width: 74px;
+}
+
+.a-first-block-footer:not(:last-child) {
+  border-right: 1px solid #252525;
+}
+
+
+.second-block-footer {
+  display: flex;
+}
+
+.a-second-block-footer {
+  display: block;
+  text-decoration: none;
+  @include textt(13px, #353535, $ml);
+}
+
+.a-second-block-footer:hover {
+  color: #c7b299;
+}
+
+.a-second-block-footer:active {
+  color: #ce7810;
+}
+
+.a-second-block-footer:nth-of-type(1) {
+  text-align: center;
+  width: 174px;
+}
+
+.a-second-block-footer:nth-of-type(2) {
+  text-align: center;
+  width: 174px;
+}
+
+.a-second-block-footer:not(:last-child) {
+  border-right: 1px solid #252525;
 }

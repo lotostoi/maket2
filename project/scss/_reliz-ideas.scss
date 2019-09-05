@@ -1,5 +1,6 @@
 .Waxom-is-ealization {
-  width: inherit;
+  width: $max;
+  box-sizing: border-box;
   display: flex;
   position: relative;
   background-color: #fbfaf8;

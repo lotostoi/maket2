@@ -55,6 +55,19 @@
     font-weight: normal;
     font-style: normal;
 }
+
+@font-face {
+     font-family: 'Raleway Bold';
+     src: url('../font/raleway/raleway-bold-webfont.eot');
+     src: url('../font/raleway/raleway-bold-webfont#iefix') format('embedded-opentype'),
+          url('../font/raleway/raleway-bold-webfont.woff2') format('woff2'),
+          url('../font/releway/raleway-bold-webfont.woff') format('woff'),
+          url('../font/raleway/raleway-bold.ttf') format('ttf');
+     font-weight: normal;
+     font-style: normal;
+ }
+ 
+
 @font-face {
     font-family: 'Raleway ExtraBold';
     src: url('../font/raleway/raleway-extrabold-webfont.eot');
@@ -65,6 +78,8 @@
     font-weight: normal;
     font-style: normal;
 }
+
+
 @font-face {
     font-family: 'Raleway SemiBold';
     src: url('../font/raleway/raleway-semibold-webfont.eot');
@@ -72,6 +87,17 @@
          url('../font/raleway/raleway-semibold-webfont.woff2') format('woff2'),
          url('../font/releway/raleway-semibold-webfont.woff') format('woff'),
          url('../font/raleway/raleway-semibold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto regular';
+    src: url('../font/Roboto/roboto-regular-webfont.eot');
+    src: url('../font/Roboto/roboto-regular-webfont.eot#iefix') format('embedded-opentype'),
+         url('../font/Roboto/roboto-regular-webfont.woff2') format('woff2'),
+         url('../font//Roboto/roboto-regular-webfont.woff') format('woff'),
+         url('../font/Roboto/roboto-regular.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
 }
