@@ -744,7 +744,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
- 
+ // border-bottom: 1px solid rgb(202, 200, 200);
 }
 
 .a-logo-aside {
@@ -787,6 +787,7 @@
   background-color: #191919;
   display: flex;
   justify-content: space-between;
+ // border-bottom: 1px solid rgb(202, 200, 200);
 }
 
 .wahom {
@@ -985,7 +986,7 @@
 
 .a-widget:nth-child(3),
 .a-widget:nth-child(4) {
-  margin-top: 10px;
+  margin-top: 8px;
 }
 /* *****************************footer*****************************
 *****************************footer*****************************
