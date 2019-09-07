@@ -71,10 +71,10 @@
 }
 
 .contener {
+  overflow: hidden;
   margin: 20px auto;
   width: auto;
   max-width: 1920px;
-  min-width: 1400px;
   box-sizing: content-box;
 }
 
@@ -92,27 +92,15 @@
   padding-bottom: 40px;
 }
 
-@media (max-width: 1024px) {
-  .header {
-    width: 1017.6px;
-  }
-}
-
 .header .logo-nav-sersh {
-  padding: 0 275px 0 374px;
+  padding: 0 10px 0 374px;
   box-sizing: border-box;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-@media (max-width: 1024px) {
-  .header .logo-nav-sersh {
-    padding: 0 143.96px 0 228.14px;
-  }
+  justify-content: end;
 }
 
 .header .logo-nav-sersh .a-logo {
@@ -154,21 +142,19 @@
   color: #dd6337;
 }
 
+.header .logo-nav-sersh .button-meny,
+.header .logo-nav-sersh .input-button-meny {
+  display: none;
+}
+
 .header .logo-nav-sersh .nav-header {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
   align-items: center;
-  height: 58px;
-  width: 873px;
+  width: 639px;
+  margin-left: 184px;
   margin-top: -1px;
-}
-
-@media (max-width: 1024px) {
-  .header .logo-nav-sersh .nav-header {
-    width: 686.08px;
-    margin-left: 0px;
-  }
 }
 
 .header .logo-nav-sersh .nav-header .a-nav-header {
@@ -217,9 +203,9 @@
 
 .header .logo-nav-sersh .icon_cart {
   display: block;
+  margin-left: 56px;
   border: none;
   outline: none;
-  margin-left: 57px;
   margin-top: 3px;
   background-color: rgba(0, 0, 0, 0);
   fill: white;
@@ -233,43 +219,26 @@
   fill: #e9531d;
 }
 
-.header .logo-nav-sersh .form-search:hover .serch-button-header {
-  background-color: #423c3c;
-  border: 1px solid white;
-}
-
-.header .logo-nav-sersh .form-search:active .serch-button-header {
-  background-color: #3b3737;
-  border: 1px solid orange;
-}
-
 .header .logo-nav-sersh .form-search {
-  margin-top: -1px;
-  margin-left: -6px;
-}
-
-.header .logo-nav-sersh .serch-button-header {
-  display: inline-block;
-  float: left;
-  margin-left: 28px;
-  width: 24px;
-  height: 24px;
-  background: url(../img/icon-search.svg) no-repeat;
-  background-size: cover;
-  border: none;
-  outline: none;
-  font-size: 0;
+  padding: 2px;
+  margin-top: -3px;
+  margin-left: 20px;
 }
 
 .header .logo-nav-sersh .search-header {
-  float: left;
-  display: inline-block;
+  background: url(../img/icon-search.svg) no-repeat;
+  background-size: 25px 25px;
+  background-position-x: 98%;
+  background-position-y: center;
   padding: 5px;
+  padding-left: 20px;
+  display: block;
   background-color: rgba(0, 0, 0, 0);
-  height: 24px;
-  width: 100px;
+  height: 34px;
+  width: 0px;
   border: none;
   outline: none;
+  transition: width 500ms linear;
   font-family: "Raleway regular", "Arial", Sans-serif;
   font-size: 14px;
   color: white;
@@ -291,6 +260,15 @@
   color: rgba(0, 0, 0, 0);
 }
 
+.header .logo-nav-sersh .search-header:focus {
+  padding: 5px;
+  padding-right: 15%;
+  background-color: #8f909185;
+  border-radius: 5px;
+  width: 250px;
+  z-index: 19;
+}
+
 .header .logo-nav-sersh input::-webkit-search-decoration,
 .header .logo-nav-sersh input::-webkit-search-cancel-button,
 .header .logo-nav-sersh input::-webkit-search-results-button,
@@ -298,49 +276,9 @@
   display: none;
 }
 
-.header .logo-nav-sersh .form-search:hover .search-header,
-.header .logo-nav-sersh .form-search:focus .search-header {
-  height: 24px;
-  width: 100px;
-  outline: none;
-  border: 1px solid white;
-  border-left: none;
-  background-color: #423c3c;
-  font-family: "Raleway regular", "Arial", Sans-serif;
-  font-size: 14px;
-  color: white;
-}
-
-.header .logo-nav-sersh .form-search:hover .search-header::-webkit-input-placeholder,
-.header .logo-nav-sersh .form-search:focus .search-header::-webkit-input-placeholder {
-  color: white;
-}
-
-.header .logo-nav-sersh .form-search:hover .search-header:-moz-placeholder,
-.header .logo-nav-sersh .form-search:focus .search-header:-moz-placeholder {
-  color: white;
-}
-
-.header .logo-nav-sersh .form-search:hover .search-header::-moz-placeholder,
-.header .logo-nav-sersh .form-search:focus .search-header::-moz-placeholder {
-  color: white;
-}
-
-.header .logo-nav-sersh .form-search:hover .search-header:-ms-input-placeholder,
-.header .logo-nav-sersh .form-search:focus .search-header:-ms-input-placeholder {
-  color: white;
-}
-
 .header .carousel {
   padding: 278px 147px 0px 147px;
   position: relative;
-}
-
-@media (max-width: 1024px) {
-  .header .carousel {
-    width: 686.08px;
-    padding: 186.26px 98.49px 0px 98.49px;
-  }
 }
 
 .header .carousel .carousel-item {
@@ -351,12 +289,6 @@
   margin-right: -100%;
   backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
-}
-
-@media (max-width: 1024px) {
-  .header .carousel .carousel-item {
-    width: 686.08px;
-  }
 }
 
 .header .carousel .carousel-item .slaider-top {
@@ -371,13 +303,6 @@
   line-height: 36px;
 }
 
-@media (max-width: 1024px) {
-  .header .carousel .carousel-item .slaider-top {
-    width: 380.56px;
-    margin: 0 auto;
-  }
-}
-
 .header .carousel .carousel-item .h1-slaider {
   padding: 0;
   margin: 12px 0 0 426px;
@@ -387,13 +312,6 @@
   font-size: 52px;
   color: white;
   line-height: 52px;
-}
-
-@media (max-width: 1024px) {
-  .header .carousel .carousel-item .h1-slaider {
-    width: 100%;
-    margin: 0 auto;
-  }
 }
 
 .header .carousel .carousel-item .h1-slaider .pobel {
@@ -416,13 +334,6 @@
   color: white;
 }
 
-@media (max-width: 1024px) {
-  .header .carousel .carousel-item .slader-text {
-    width: 380.56px;
-    margin: 0 auto;
-  }
-}
-
 .header .carousel .carousel-item .slaider-botton {
   margin: 49px 0 0 726px;
   min-height: 53px;
@@ -440,12 +351,6 @@
   color: white;
   box-shadow: inset 0 -3px 0 #736357;
   text-transform: uppercase;
-}
-
-@media (max-width: 1024px) {
-  .header .carousel .carousel-item .slaider-botton {
-    margin: 0 auto;
-  }
 }
 
 .header .carousel .carousel-item .slaider-botton:hover {
@@ -561,14 +466,6 @@
   margin-left: 758px;
   margin-top: 594px;
   list-style: none;
-}
-
-@media (max-width: 1024px) {
-  .header .carousel .carousel-indicators {
-    width: 79.34px;
-    margin: 0 auto;
-    margin-top: 594px;
-  }
 }
 
 .header .carousel .carousel-indicators a {
@@ -2048,4 +1945,221 @@
 
 .a-second-block-footer:not(:last-child) {
   border-right: 1px solid #252525;
+}
+
+@media (min-width: 320px) and (max-width: 578px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  .contener {
+    margin: 2px auto;
+    width: 100%;
+    box-sizing: content-box;
+  }
+  .contener::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+  .header {
+    width: 100%;
+    background-image: url("../img/fon_header.jpg");
+    background-size: cover;
+    padding: 2%;
+    box-sizing: border-box;
+  }
+  .header .logo-nav-sersh {
+    padding: 0 3% 0 3%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .header .logo-nav-sersh .a-logo {
+    display: block;
+    width: 214px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+  }
+  .header .logo-nav-sersh .img-logo {
+    display: inline-block;
+    fill: white;
+  }
+  .header .logo-nav-sersh .text-logo {
+    display: inline-block;
+    color: #ffffff;
+    letter-spacing: -0.9px;
+    font-family: "Raleway regular", "Arial", Sans-serif;
+    font-size: 34px;
+    color: white;
+    margin-left: 2px;
+    display: none;
+  }
+  .header .logo-nav-sersh .button-meny {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+    transition: transform 0.45s linear, border-radius 0.45s linear, box-shadow 0.45s linear, border 0.45s linear;
+  }
+  .header .logo-nav-sersh .button-meny span {
+    display: block;
+    border-bottom: 3px solid white;
+    height: 0;
+    width: 30px;
+    position: absolute;
+    transition: transform 0.3s linear;
+  }
+  .header .logo-nav-sersh .button-meny span:first-child {
+    top: 10px;
+    left: 5px;
+  }
+  .header .logo-nav-sersh .button-meny span:last-child {
+    bottom: 10px;
+    left: 5px;
+  }
+  .header .logo-nav-sersh .button-meny::before {
+    top: 18.5px;
+    left: 5px;
+    position: absolute;
+    content: '';
+    display: block;
+    border-bottom: 3px solid white;
+    height: 0;
+    width: 30px;
+    opacity: 1;
+    transition: opacity 0.45s linear;
+  }
+  .header .logo-nav-sersh .input-button-meny:checked + .button-meny::before {
+    opacity: 0;
+  }
+  .header .logo-nav-sersh .input-button-meny:checked + .button-meny {
+    transform: rotate(360deg);
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.007);
+    -webkit-box-shadow: 0px 0px 39px 2px #e3a716;
+    -moz-box-shadow: 0px 0px 39px 2px #e3a716;
+    box-shadow: 0px 0px 39px 2px #e3a716;
+  }
+  .header .logo-nav-sersh .nav-header {
+    margin: 0;
+    margin-top: 2%;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    display: none;
+  }
+  .header .logo-nav-sersh .nav-header .a-nav-header {
+    padding: 3% 0 3% 0;
+    margin: 0;
+    margin-bottom: 2%;
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-family: "Montserrat light", "Arial", Sans-serif;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    background-color: #35353565;
+    border-radius: 10px;
+  }
+  .header .logo-nav-sersh .nav-header .a-nav-header:hover {
+    color: #e4987c;
+  }
+  .header .logo-nav-sersh .nav-header .a-nav-header:active {
+    color: #e9531d;
+  }
+  .header .logo-nav-sersh .nav-header .a-nav-header:hover {
+    background-color: #705c3665;
+  }
+  .header .logo-nav-sersh .nav-header .a-nav-header:active {
+    background-color: #70367065;
+  }
+  .header .logo-nav-sersh .nav-header .a-nav-header:nth-of-type(2),
+  .header .logo-nav-sersh .nav-header .a-nav-header:nth-of-type(3),
+  .header .logo-nav-sersh .nav-header .a-nav-header:nth-of-type(4),
+  .header .logo-nav-sersh .nav-header .a-nav-header:nth-of-type(5),
+  .header .logo-nav-sersh .nav-header .a-nav-header:nth-of-type(6),
+  .header .logo-nav-sersh .nav-header .a-nav-header:nth-of-type(7),
+  .header .logo-nav-sersh .nav-header .a-nav-header:nth-of-type(8) {
+    margin-left: 0;
+  }
+  .header .logo-nav-sersh .icon_cart {
+    display: none;
+  }
+  .header .logo-nav-sersh .form-search {
+    display: none;
+  }
+  .header .logo-nav-sersh .input-button-meny:checked ~ .nav-header {
+    display: flex;
+  }
+  .header .logo-nav-sersh .input-button-meny:checked ~ .form-search {
+    display: flex;
+  }
+  .header .logo-nav-sersh .input-button-meny:checked ~ .icon_cart {
+    display: block;
+    margin-left: 0;
+  }
+  .header .logo-nav-sersh .input-button-meny:checked ~ .button-meny > span:first-child {
+    transform: rotate(45deg);
+    top: 18.5px;
+  }
+  .header .logo-nav-sersh .input-button-meny:checked ~ .button-meny > span:last-child {
+    transform: rotate(-45deg);
+    top: 18.5px;
+  }
+  .carousel.slide {
+    display: none;
+  }
+  /* *****************block 2*********************
+*****************block 2*********************
+*****************block 2*********************
+ */
+  .cont-help {
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .help {
+    display: block;
+    width: 49%;
+    height: inherit;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+  }
+  .h3-help {
+    margin-top: 25px;
+    width: 100%;
+    font-family: "Raleway SemiBold", "Arial", Sans-serif;
+    font-size: 16px;
+    color: #555555;
+  }
+  .p-help {
+    width: 100%;
+    line-height: 24px;
+    margin-top: -8px;
+    margin-bottom: 28px;
+    font-family: "Montserrat light", "Arial", Sans-serif;
+    font-size: 11px;
+    color: #555555;
+  }
+  .p-help::after {
+    position: absolute;
+    content: "";
+    display: block;
+    border-top: 2px solid #555555;
+    width: 26%;
+    bottom: 0;
+    left: 37%;
+  }
 }

@@ -7,22 +7,17 @@
   background-size: cover;
   padding-top: 40px;
   padding-bottom: 40px;
-  @media (max-width: 1024px) {
-    width: 1920px/100 * 53;
-  }
 
   .logo-nav-sersh {
     padding: 0 275px 0 374px;
-    @media (max-width: 1024px) {
-      padding: 0 236px/100 * 61 0 374px/100 * 61;
-    }
     box-sizing: border-box;
     width: 100%;
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 50%; */
 
     .a-logo {
       display: block;
@@ -61,19 +56,19 @@
       color: rgb(221, 99, 55);
     }
 
+    .button-meny,
+    .input-button-meny {
+      display: none;
+    }
+
     .nav-header {
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-start;
       align-items: center;
-      height: 58px;
-      width: 873px;
+      width: 639px;
+      margin-left: 188px;
       margin-top: -1px;
-
-      @media (max-width: 1024px) {
-        width: 1024px/100 * 67;
-        margin-left: 0px;
-      }
 
       .a-nav-header {
         display: inline-block;
@@ -111,17 +106,71 @@
       }
     }
 
+    .cart-serch {
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+      flex-wrap: wrap;
+    }
+
     .icon_cart {
       display: block;
       border: none;
       outline: none;
-      margin-left: 57px;
       margin-top: 3px;
       background-color: rgba($color: #000000, $alpha: 0);
       fill: white;
       @include hover-and-activ-fill(rgb(228, 152, 124), rgb(233, 83, 29));
     }
 
+    .form-search {
+      position: relative;
+      padding: 5px;
+      display: flex;
+      margin-top: -1px;
+      margin-left: -6px;
+    }
+
+    .search-header {
+      float: right;
+      background: url(../img/icon-search.svg) no-repeat;
+      background-size: 25px 25px;
+      background-position-x: 94%;
+      background-position-y: center;
+      padding: 5px;
+      padding-left: 40px;
+      display: block;
+      background-color: rgba($color: #000000, $alpha: 0);
+      height: 34px;
+      width: 0px;
+      border: none;
+      outline: none;
+      transition: width 500ms linear;
+      @include textt(14px, white, $rr);
+
+      @include placeholder {
+        color: rgba($color: #000000, $alpha: 0);
+      }
+    }
+
+    .search-header:focus {
+      padding: 5px;
+      margin-left: 5px;
+      background-color: #8f909185;
+      border-radius: 5px;
+      width: 250px;
+      z-index: 19;
+    }
+
+    input::-webkit-search-decoration,
+    input::-webkit-search-cancel-button,
+    input::-webkit-search-results-button,
+    input::-webkit-search-results-decoration {
+      display: none;
+    }
+
+
+    /* 
     .form-search:hover .serch-button-header {
       background-color: rgb(66, 60, 60);
       border: 1px solid white;
@@ -130,40 +179,6 @@
     .form-search:active .serch-button-header {
       background-color: rgb(59, 55, 55);
       border: 1px solid orange;
-    }
-
-    .form-search {
-      margin-top: -1px;
-      margin-left: -6px;
-    }
-
-    .serch-button-header {
-      display: inline-block;
-      float: left;
-      margin-left: 28px;
-      width: 24px;
-      height: 24px;
-      background: url(../img/icon-search.svg) no-repeat;
-      background-size: cover;
-      border: none;
-      outline: none;
-      font-size: 0;
-    }
-
-    .search-header {
-      float: left;
-      display: inline-block;
-      padding: 5px;
-      background-color: rgba($color: #000000, $alpha: 0);
-      height: 24px;
-      width: 100px;
-      border: none;
-      outline: none;
-      @include textt(14px, white, $rr);
-
-      @include placeholder {
-        color: rgba($color: #000000, $alpha: 0);
-      }
     }
 
     input::-webkit-search-decoration,
@@ -186,22 +201,15 @@
       @include placeholder {
         color: white;
       }
-    }
+    } */
   }
 
   .carousel {
     padding: 278px 147px 0px 147px;
     position: relative;
-    @media (max-width: 1024px) {
-      width: 1024px/100 * 67;
-      padding: 278px/100 * 67 147px/100 * 67 0px 147px/100 * 67;
-    }
 
     .carousel-item {
       // width: 100%;
-      @media (max-width: 1024px) {
-        width: 1024px/100 * 67;
-      }
       position: relative;
       display: none;
       float: left;
@@ -215,10 +223,6 @@
         margin: 2px 0 0 527px;
         padding: 0;
         width: 568px;
-        @media (max-width: 1024px) {
-          width: 568px/100 * 67;
-          margin: 0 auto;
-        }
         text-align: center;
         @include textt(36px, white, $rm);
         line-height: 36px;
@@ -231,10 +235,7 @@
         text-align: center;
         @include textt(52px, white, $reb);
         line-height: 52px;
-        @media (max-width: 1024px) {
-          width: 100%;
-          margin: 0 auto;
-        }
+
 
         .pobel {
           margin-left: 2px;
@@ -251,17 +252,10 @@
         text-align: center;
         line-height: 24px;
         @include textt(16px, white, $ml);
-        @media (max-width: 1024px) {
-          width: 568px/100 * 67;
-          margin: 0 auto;
-        }
       }
 
       .slaider-botton {
         margin: 49px 0 0 726px;
-        @media (max-width: 1024px) {
-          margin: 0 auto;
-        }
         min-height: 53px;
         border: none;
         @include button(170px, 5px, #998675);
@@ -384,11 +378,6 @@
       display: flex;
       padding-left: 0;
       margin-left: 758px;
-      @media (max-width: 1024px) {
-        width: 79.34px;
-        margin: 0 auto;
-        margin-top: 594px;
-      }
       margin-top: 594px;
       list-style: none;
 
@@ -403,7 +392,7 @@
         //background-color: #8f9091;
         cursor: pointer;
         // Use transparent borders to increase the hit area by 10px on top and bottom.
-       // @include transition($carousel-indicator-transition);
+        // @include transition($carousel-indicator-transition);
       }
 
       a:before {
@@ -437,7 +426,7 @@
         width: 10px;
         height: 10px;
         border-radius: 50%;
-       // background-color: #db955c00;
+        // background-color: #db955c00;
         display: none;
         left: 0.5px;
         top: 0.5px;
