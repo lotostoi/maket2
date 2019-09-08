@@ -127,11 +127,11 @@
 }
 
 .header .logo-nav-sersh .a-logo:hover .img-logo {
-  fill: #e4987c;
+  fill: #c42835;
 }
 
 .header .logo-nav-sersh .a-logo:hover .text-logo {
-  color: #e4987c;
+  color: #c42835;
 }
 
 .header .logo-nav-sersh .a-logo:active .img-logo {
@@ -540,6 +540,10 @@
   width: inherit;
 }
 
+/*************************************help**********************************/
+/*************************************help**********************************/
+/*************************************help**********************************/
+/*************************************help**********************************/
 .cont-help {
   padding: 70px 341px 79px 376px;
   display: flex;
@@ -627,18 +631,10 @@
   fill: #cc7811;
 }
 
-.Waxom-is-ealization {
-  width: inherit;
-  display: flex;
-  position: relative;
-  background-color: #fbfaf8;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 52px 575px 0 576px;
-  box-sizing: border-box;
-  z-index: 5;
-}
-
+/*************************************Waxom-is-ealization**********************************/
+/*************************************Waxom-is-ealization**********************************/
+/*************************************Waxom-is-ealization**********************************/
+/*************************************Waxom-is-ealization**********************************/
 .Waxom-is-ealization {
   width: 1920px;
   box-sizing: border-box;
@@ -704,8 +700,12 @@
   z-index: 30;
 }
 
+/*************************************Purchase-Now**********************************/
+/*************************************Purchase-Now**********************************/
+/*************************************Purchase-Now**********************************/
+/*************************************Purchase-Now**********************************/
 .Purchase-Now {
-  width: 1920px;
+  width: 100%;
   box-sizing: border-box;
   display: flex;
   justify-content: space-between;
@@ -780,7 +780,7 @@
 **********************Our-Latest-Projects***********************
 **********************Our-Latest-Projects*********************** */
 .Our-Latest-Projects {
-  width: 1920px;
+  width: 100%;
   box-sizing: border-box;
   padding: 75px 376px 78px 374px;
   display: flex;
@@ -1101,12 +1101,6 @@
   text-transform: uppercase;
 }
 
-@media (max-width: 1024px) {
-  .button-Our-Latest-Projectss {
-    margin: 0 auto;
-  }
-}
-
 .button-Our-Latest-Projectss:hover {
   background-color: #a57449;
   color: white;
@@ -1122,9 +1116,8 @@
 **********************video***********************************
 **********************video*********************************** */
 .video {
+  display: flex;
   position: relative;
-  width: 1920px;
-  height: 706px;
 }
 
 .video-precenteition {
@@ -1143,10 +1136,6 @@
   top: 0;
   width: 1920px;
   height: 706px;
-  /*  background: url(../img/fon-photo1.jpg) no-repeat;
-  background-image: none;
-  background-size: cover;
- */
 }
 
 .fon-video {
@@ -1224,11 +1213,12 @@
 }
 
 /* 
-<!-- *****************************Excellent for Mobile Devices.*************************
 *****************************Excellent for Mobile Devices.******************************
 *****************************Excellent for Mobile Devices.******************************
-*****************************Excellent for Mobile Devices.************************** --> */
+*****************************Excellent for Mobile Devices.******************************
+*****************************Excellent for Mobile Devices.**************************  */
 .section-Excellent-for-Mobile-Devices {
+  width: 100%;
   padding: 188px 350px 174px 873px;
   background: url(../img/iPhone-in-hand.png) no-repeat center;
   background-size: cover;
@@ -1311,6 +1301,7 @@
 *****************************Statistic******************************
 *****************************Statistic**************************  */
 .aside-statistic {
+  width: 100%;
   padding: 69px 484px 60px 492px;
   display: flex;
   justify-content: space-between;
@@ -1380,12 +1371,12 @@
   color: #f18908;
 }
 
-/* <!-- ************************Resent posts******************************
+/****************************Resent posts******************************
 *****************************Resent posts******************************
 *****************************Resent posts******************************
-*****************************Resent posts************************** --> */
+*****************************Resent posts**************************  */
 .resent-posts {
-  width: 1920px;
+  width: 100%;
   box-sizing: border-box;
   padding: 78px 345px 81px 374px;
   display: flex;
@@ -1580,12 +1571,12 @@
   fill: #c98c42;
 }
 
-/* ***********************************aside-grup-logos***********************************
+/* ********************************aside-grup-logos***********************************
 ***********************************aside-grup-logos***********************************
 ***********************************aside-grup-logos***********************************
-***********************************aside-grup-logos*********************************** */
+***********************************aside-grup-logos******************************** */
 .aside-grup-logos {
-  width: 1920px;
+  width: 100%;
   box-sizing: border-box;
   padding: 138px 400px 132px 400px;
   background: url(../img/Background-aside-logo.png) no-repeat;
@@ -1601,6 +1592,7 @@
   align-items: center;
   width: 230px;
   height: 230px;
+  transition: transform 0.25s linear;
 }
 
 .aside-grup-logos > a:nth-child(1) > img {
@@ -1613,22 +1605,18 @@
 
 .a-logo-aside:hover {
   border-radius: 50%;
-  -webkit-box-shadow: 0px 0px 22px 12px #ffa700;
-  -moz-box-shadow: 0px 0px 22px 12px #ffa700;
-  box-shadow: 0px 0px 22px 12px #ffa700;
+  transform: scale(1.3);
 }
 
 .a-logo-aside:active {
   border-radius: 50%;
-  -webkit-box-shadow: 0px 0px 22px 12px #b0517c;
-  -moz-box-shadow: 0px 0px 22px 12px #b0517c;
-  box-shadow: 0px 0px 22px 12px #b0517c;
+  transform: scale(0.4);
 }
 
-/* ***********************************information********************************
+/* ********************************information***********************************
 ***********************************information***********************************
 ***********************************information***********************************
-***********************************information*********************************** */
+***********************************information******************************** */
 .information {
   width: 1920px;
   box-sizing: border-box;
@@ -1857,11 +1845,11 @@
   margin-top: 8px;
 }
 
-/* *****************************footer*****************************
+/* **************************footer*****************************
 *****************************footer*****************************
-*****************************footer***************************** */
+*****************************footer************************** */
 .footer-main {
-  width: 1920px;
+  width: 100%;
   box-sizing: border-box;
   padding: 42px 375px 40px 375px;
   display: flex;
@@ -1947,22 +1935,24 @@
   border-right: 1px solid #252525;
 }
 
+/* *******************************mobil version******************************************
+**********************************mobil version******************************************
+**********************************mobil version******************************************
+**********************************mobil version*************************************** */
 @media (min-width: 320px) and (max-width: 578px) {
   body {
     margin: 0;
     padding: 0;
   }
   .contener {
+    flex-direction: column;
     margin: 2px auto;
     width: 100%;
     box-sizing: content-box;
   }
-  .contener::after {
-    display: block;
-    clear: both;
-    content: "";
-  }
   .header {
+    display: flex;
+    order: 1;
     width: 100%;
     background-image: url("../img/fon_header.jpg");
     background-size: cover;
@@ -1976,36 +1966,53 @@
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
+    /* .button-meny:hover {
+        border: 1px solid rgb(196, 40, 53);;
+      }
+      .button-meny:hover  span{
+        border-color:  rgb(196, 40, 53);;
+      }
+      .button-meny:hover::before {
+        border-color: rgb(196, 40, 53);;
+      } */
   }
   .header .logo-nav-sersh .a-logo {
     display: block;
-    width: 214px;
+    width: 87%;
     display: flex;
     align-items: center;
     text-decoration: none;
   }
   .header .logo-nav-sersh .img-logo {
+    margin-top: 2%;
     display: inline-block;
     fill: white;
+    animation: rotate 3s linear infinite;
+  }
+  @keyframes rotate {
+    from {
+      transform: rotateY(360deg);
+    }
   }
   .header .logo-nav-sersh .text-logo {
     display: inline-block;
     color: #ffffff;
     letter-spacing: -0.9px;
-    font-family: "Raleway regular", "Arial", Sans-serif;
-    font-size: 34px;
-    color: white;
-    margin-left: 2px;
-    display: none;
+    font-family: "Raleway SemiBold", "Arial", Sans-serif;
+    font-size: 24px;
+    color: #dfdddd;
+    margin-left: 35%px;
+    margin-top: 9px;
   }
   .header .logo-nav-sersh .button-meny {
+    margin-top: 2%;
     position: relative;
     display: block;
     width: 40px;
     height: 40px;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 10px;
-    transition: transform 0.45s linear, border-radius 0.45s linear, box-shadow 0.45s linear, border 0.45s linear;
+    transition: transform 0.45s linear, border-radius 0.45s linear, box-shadow 0.45s linear, border 0.45s linear, background-color 0.45s linear;
   }
   .header .logo-nav-sersh .button-meny span {
     display: block;
@@ -2042,34 +2049,32 @@
     transform: rotate(360deg);
     border-radius: 50%;
     border: 1px solid rgba(255, 255, 255, 0.007);
-    -webkit-box-shadow: 0px 0px 39px 2px #e3a716;
-    -moz-box-shadow: 0px 0px 39px 2px #e3a716;
-    box-shadow: 0px 0px 39px 2px #e3a716;
+    background-color: #8a858565;
   }
   .header .logo-nav-sersh .nav-header {
     margin: 0;
     margin-top: 2%;
-    display: none;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     height: auto;
-    display: none;
+    transition: height 500ms linear;
   }
   .header .logo-nav-sersh .nav-header .a-nav-header {
-    padding: 3% 0 3% 0;
+    padding: 0 0 0 0;
     margin: 0;
-    margin-bottom: 2%;
+    min-height: 0px;
     width: 100%;
     display: block;
     text-align: center;
     font-family: "Montserrat light", "Arial", Sans-serif;
-    font-size: 14px;
+    font-size: 0;
     color: white;
     text-decoration: none;
     background-color: #35353565;
-    border-radius: 10px;
+    transition: padding 350ms linear, font-size 350ms linear, margin-top 350ms linear;
   }
   .header .logo-nav-sersh .nav-header .a-nav-header:hover {
     color: #e4987c;
@@ -2098,8 +2103,13 @@
   .header .logo-nav-sersh .form-search {
     display: none;
   }
-  .header .logo-nav-sersh .input-button-meny:checked ~ .nav-header {
-    display: flex;
+  .header .logo-nav-sersh .input-button-meny:checked ~ .nav-header > .a-nav-header {
+    padding: 3% 0 3% 0;
+    margin-bottom: 2%;
+    font-family: "Montserrat light", "Arial", Sans-serif;
+    font-size: 14px;
+    color: white;
+    border-radius: 10px;
   }
   .header .logo-nav-sersh .input-button-meny:checked ~ .form-search {
     display: flex;
@@ -2119,12 +2129,17 @@
   .carousel.slide {
     display: none;
   }
-  /* *****************block 2*********************
+  .main {
+    display: flex;
+    flex-direction: column;
+    width: inherit;
+  }
+  /* **************block 2*********************
 *****************block 2*********************
-*****************block 2*********************
- */
+*****************block 2*****************  */
   .cont-help {
-    padding: 2%;
+    order: 5;
+    padding: 2% 2% 5% 2%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -2150,7 +2165,7 @@
     margin-top: -8px;
     margin-bottom: 28px;
     font-family: "Montserrat light", "Arial", Sans-serif;
-    font-size: 11px;
+    font-size: 14px;
     color: #555555;
   }
   .p-help::after {
@@ -2161,5 +2176,547 @@
     width: 26%;
     bottom: 0;
     left: 37%;
+  }
+  .help:hover .p-help::after {
+    border-top: 2px solid #c7b299;
+  }
+  .help:active .p-help::after {
+    border-top: 2px solid #cc7811;
+  }
+  /* *********************block 3****************************
+************************block 3****************************
+************************block 3************************* */
+  .Waxom-is-ealization {
+    display: none;
+  }
+  /* *********************block 4****************************
+************************block 4****************************
+************************block 4************************* */
+  .Purchase-Now {
+    order: 4;
+    width: 100%;
+    padding: 3%;
+    flex-wrap: wrap;
+  }
+  .Purchase-Now .Purchase-Now-cont-next {
+    width: 100%;
+  }
+  .Purchase-Now .Purchase-Now-cont-next .h2-Purchase-Now {
+    text-align: center;
+    margin: 0;
+  }
+  .Purchase-Now .Purchase-Now-cont-next .text-brown {
+    font-family: "Raleway regular", "Arial", Sans-serif;
+    font-size: 18px;
+    color: #c7b299;
+  }
+  .Purchase-Now .Purchase-Now-cont-next .text-white {
+    font-family: "Raleway regular", "Arial", Sans-serif;
+    font-size: 18px;
+    color: #ffffff;
+  }
+  .Purchase-Now .Purchase-Now-cont-next .p-Purchase-Now {
+    text-align: center;
+    margin: 8px 0 0 -3px;
+    font-family: "Montserrat light", "Arial", Sans-serif;
+    font-size: 14px;
+    color: #615855;
+  }
+  .Purchase-Now .button-Purchase-Now {
+    padding: 3%;
+    margin: 5% auto 0;
+    min-height: auto;
+    border: none;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    width: 40%;
+    border-radius: 5px;
+    background-color: #998675;
+    text-decoration: none;
+    font-family: "Raleway regular", "Arial", Sans-serif;
+    font-size: 14px;
+    color: white;
+  }
+  .Purchase-Now .button-Purchase-Now:hover {
+    background-color: #574f4a;
+    color: white;
+  }
+  .Purchase-Now .button-Purchase-Now:active {
+    background-color: #302823;
+    color: white;
+  }
+  /* *******************Our-Latest-Projects***********************
+**********************Our-Latest-Projects***********************
+**********************Our-Latest-Projects***********************
+**********************Our-Latest-Projects**********************/
+  .Our-Latest-Projects {
+    order: 2;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid #8c8c8c;
+    background-color: #f8f5f5;
+  }
+  .h2-Our-Latest-Projects {
+    margin: 5% auto 0;
+    text-align: center;
+    width: 90%;
+    font-family: "Raleway SemiBold", "Arial", Sans-serif;
+    font-size: 20px;
+    color: #555555;
+  }
+  .p-Our-Latest-Projects {
+    margin: 5% auto 0;
+    text-align: center;
+    width: 100%;
+    line-height: 28px;
+    font-family: "Montserrat regular", "Arial", Sans-serif;
+    font-size: 16px;
+    color: #8c8c8c;
+    position: relative;
+  }
+  .nav-Our-Latest-Projects {
+    display: none;
+  }
+  .rov1-Our-Latest-Projects {
+    padding: 3% 1%;
+    width: 100%;
+    margin-top: 0;
+    background-color: #f8f5f5;
+  }
+  .rov1-Our-Latest-Projects .a-Our-Latest-Projects {
+    margin: 0 auto;
+    background-color: #aaa7a1;
+    width: 90%;
+    text-decoration: none;
+    position: relative;
+    outline: 1px solid #f0eded;
+  }
+  .rov1-Our-Latest-Projects .p1-Our-Latest-Projects::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border: 23px solid rgba(255, 255, 255, 0);
+    border-bottom: 15px solid #aaa7a1;
+    left: -17px;
+    bottom: 45px;
+    z-index: 200;
+  }
+  .rov1-Our-Latest-Projects .a-link {
+    position: absolute;
+    left: 40%;
+    top: 25%;
+    z-index: 206;
+    display: none;
+  }
+  .rov1-Our-Latest-Projects .a-lupa {
+    position: absolute;
+    left: 55%;
+    top: 25%;
+    z-index: 205;
+    display: none;
+  }
+  .rov1-Our-Latest-Projects .img-Our-Latest-Projects {
+    width: 100% !important;
+    height: auto !important;
+    display: inline-block;
+    background-color: #2f2f2f;
+  }
+  .rov1-Our-Latest-Projects .p1-Our-Latest-Projects {
+    display: block;
+    margin: 22px 0 0 27px;
+    position: relative;
+    font-family: "Raleway medium", "Arial", Sans-serif;
+    font-size: 20px;
+    color: #292724;
+  }
+  .rov1-Our-Latest-Projects .p2-Our-Latest-Projects {
+    display: block;
+    margin: 7px 0 25px 27px;
+    font-family: "Montserrat regular", "Arial", Sans-serif;
+    font-size: 14px;
+    color: #fdfdfd;
+  }
+  .rov1-Our-Latest-Projects .a-Our-Latest-Projects:nth-child(2),
+  .rov1-Our-Latest-Projects .a-Our-Latest-Projects:nth-child(3),
+  .rov1-Our-Latest-Projects .a-Our-Latest-Projects:nth-child(4),
+  .rov1-Our-Latest-Projects .a-Our-Latest-Projects:nth-child(5),
+  .rov1-Our-Latest-Projects .a-Our-Latest-Projects:nth-child(6) {
+    margin-top: 35px;
+  }
+  .rov1-Our-Latest-Projects .a-Our-Latest-Projects:nth-child(4),
+  .rov1-Our-Latest-Projects .a-Our-Latest-Projects:nth-child(5),
+  .rov1-Our-Latest-Projects .a-Our-Latest-Projects:nth-child(6) {
+    display: none;
+  }
+  .button-Our-Latest-Projectss {
+    padding: 3%;
+    margin: 5% auto 0;
+    min-height: auto;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+    width: 40%;
+    border-radius: 5px;
+    background-color: #998675;
+    text-decoration: none;
+    font-family: "Raleway regular", "Arial", Sans-serif;
+    font-size: 14px;
+    color: white;
+    box-shadow: none;
+  }
+  .button-Our-Latest-Projectss:hover {
+    background-color: #574f4a;
+    color: white;
+  }
+  .button-Our-Latest-Projectss:active {
+    background-color: #302823;
+    color: white;
+  }
+  /* *******************video***********************************
+**********************video***********************************
+**********************video***********************************
+**********************video******************************** */
+  .video {
+    display: flex;
+    order: 6;
+    position: relative;
+    width: 100%;
+    height: 36.7%;
+  }
+  .video-precenteition {
+    margin: 0;
+    width: 100% !important;
+    height: 36.7% !important;
+  }
+  .video-content {
+    width: inherit;
+    height: 100%;
+  }
+  .fon-video {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  .start-video {
+    margin-top: 10%;
+  }
+  .h2-video {
+    display: none;
+  }
+  .p-video {
+    display: none;
+  }
+  /* **************************Excellent for Mobile Devices.******************************
+*****************************Excellent for Mobile Devices.******************************
+*****************************Excellent for Mobile Devices.******************************
+*****************************Excellent for Mobile Devices.*****************************/
+  .section-Excellent-for-Mobile-Devices {
+    display: block;
+    padding: 8% 2% 0 2%;
+    background: url(../img/iPhone-in-hand.png) no-repeat center;
+    background-image: none;
+  }
+  .h2-Excellent-for-Mobile-Devices {
+    width: 100%;
+    float: none;
+    text-align: center;
+    font-family: "Raleway SemiBold", "Arial", Sans-serif;
+    font-size: 20px;
+    color: #555555;
+  }
+  .p-Excellent-for-Mobile-Devices {
+    margin: 0 auto;
+    margin-top: 5%;
+    font-weight: normal;
+    line-height: 20px;
+    width: 90%;
+    float: none;
+    text-align: justify;
+    font-family: "Montserrat regular", "Arial", Sans-serif;
+    font-size: 14px;
+    color: #4d4c4c;
+  }
+  .ul-Excellent-for-Mobile-Devices {
+    position: relative;
+    width: 60%;
+    margin: 0;
+    padding: 0;
+    float: none;
+    list-style-type: none;
+    margin-top: 30px;
+    padding-left: 40%;
+  }
+  .ul-Excellent-for-Mobile-Devices::after {
+    display: block;
+    clear: both;
+    content: "";
+  }
+  .ul-Excellent-for-Mobile-Devices::before {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 38%;
+    height: 100%;
+    background: url(../img/iPhone-in-hand-mobil.png) no-repeat center;
+    background-size: contain;
+    left: -2%;
+  }
+  .li-Excellent-for-Mobile-Devices {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    line-height: 22px;
+    width: 100%;
+    float: left;
+    text-align: left;
+    font-family: "Montserrat regular", "Arial", Sans-serif;
+    font-size: 14px;
+    color: #4d4c4c;
+    position: relative;
+  }
+  .li-Excellent-for-Mobile-Devices:last-child {
+    margin-bottom: 8%;
+  }
+  .li-Excellent-for-Mobile-Devices::before {
+    content: "";
+    display: block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: url(../img/011.svg) no-repeat center;
+    background-size: cover;
+    color: white;
+    position: absolute;
+    left: -20px;
+    top: 5px;
+  }
+  /* 
+*****************************Statistic******************************
+*****************************Statistic******************************
+*****************************Statistic******************************
+*****************************Statistic**************************  */
+  .aside-statistic {
+    order: 23;
+    padding: 2% 1%;
+    justify-content: space-around;
+    width: 98%;
+  }
+  .a-statistic {
+    width: 15%;
+  }
+  .svg-statistic {
+    transform: scale(0.5);
+  }
+  .a-statistic::after {
+    position: absolute;
+    content: "";
+    display: none;
+    border-top: 1px solid #c7b299;
+    width: 20%;
+    bottom: 0;
+    left: 40%;
+  }
+  .span-count-statistic {
+    display: block;
+    text-align: center;
+    width: 80%;
+    margin-top: -6%;
+    font-family: "Montserrat ulra light", "Arial", Sans-serif;
+    font-size: 15px;
+    color: #fff;
+  }
+  .h3-statistic {
+    display: none;
+    width: 80%;
+    margin-bottom: 8%;
+    margin-top: 2%;
+    font-family: "Montserrat light", "Arial", Sans-serif;
+    font-size: 13px;
+    color: #c7b299;
+    text-transform: none;
+  }
+  /* 
+*****************************resent-posts******************************
+*****************************resent-posts******************************
+*****************************resent-posts******************************
+*****************************resent-posts**************************  */
+  .resent-posts {
+    order: 25;
+    width: 100%;
+    padding: 5% 2%;
+  }
+  .h2-resent-posts {
+    width: 70%;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    font-family: "Raleway SemiBold", "Arial", Sans-serif;
+    font-size: 20px;
+    color: #555555;
+    font-weight: normal;
+  }
+  .p-resent-posts {
+    width: 90%;
+    font-family: "Montserrat light", "Arial", Sans-serif;
+    font-size: 14px;
+    color: #555555;
+    line-height: 18px;
+    margin: 4% auto 4%;
+  }
+  .cont-resent-posts {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .parts-resent-posts {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .img-resent-posts {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .h3-resent-posts {
+    width: 80%;
+    font-family: "Raleway medium", "Arial", Sans-serif;
+    font-size: 20px;
+    color: #555555;
+  }
+  .span-resent-posts {
+    margin: 0;
+    padding: 0;
+    margin-left: 28px;
+    text-align: justify;
+    width: 80%;
+    line-height: 22px;
+    font-family: "Montserrat light", "Arial", Sans-serif;
+    font-size: 14px;
+    color: #8c8c8c;
+    font-weight: normal;
+    margin-top: 15px;
+    margin-bottom: 18px;
+  }
+  .summary {
+    width: 80%;
+  }
+  /* ********************************aside-grup-logos***********************************
+***********************************aside-grup-logos***********************************
+***********************************aside-grup-logos***********************************
+***********************************aside-grup-logos**********************************/
+  .aside-grup-logos {
+    order: 30;
+    width: 100%;
+    box-sizing: content-box;
+    padding: 4% 0;
+    background: url(../img/Background-aside-logo.png) no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #929292;
+  }
+  .a-logo-aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15%;
+    height: auto;
+    transition: transform 0.25s linear;
+  }
+  .logo-aside {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .aside-grup-logos > a:nth-child(1) > img {
+    margin-right: 0;
+  }
+  .aside-grup-logos > a:nth-child(2) > img {
+    margin-right: 0;
+  }
+  .a-logo-aside:hover {
+    border-radius: 50%;
+    transform: scale(1.3);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  .a-logo-aside:active {
+    border-radius: 50%;
+    transform: scale(0.4);
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+  }
+  /* ********************************information********************************
+***********************************information***********************************
+***********************************information***********************************
+***********************************information******************************** */
+  .information {
+    display: none;
+  }
+  /* **************************footer*****************************
+*****************************footer*****************************
+*****************************footer************************** */
+  .footer-main {
+    order: 40;
+    width: 100%;
+    padding: 5% 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .first-block-footer {
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .a-first-block-footer {
+    display: block;
+    text-decoration: none;
+    font-family: "Montserrat regular", "Arial", Sans-serif;
+    font-size: 13px;
+    color: #817f7f;
+  }
+  .a-first-block-footer:nth-of-type(1) {
+    text-align: center;
+    width: 100%;
+  }
+  .a-first-block-footer:nth-of-type(2) {
+    text-align: center;
+    width: 100%;
+  }
+  .a-first-block-footer:nth-of-type(3) {
+    text-align: center;
+    width: 100%;
+  }
+  .a-first-block-footer:nth-of-type(4) {
+    text-align: center;
+    width: 100%;
+  }
+  .a-first-block-footer:not(:last-child) {
+    border-right: none;
+  }
+  .second-block-footer {
+    margin: 0 auto;
+    margin-top: 5%;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+  }
+  .a-second-block-footer {
+    display: block;
+    text-decoration: none;
+    font-family: "Montserrat regular", "Arial", Sans-serif;
+    font-size: 13px;
+    color: #817f7f;
   }
 }
