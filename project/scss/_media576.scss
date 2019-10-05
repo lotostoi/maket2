@@ -1,0 +1,116 @@
+@media (min-width : 320px) and (max-width : 578px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .contener {
+        margin: 2px auto;
+        width: 100%;
+        box-sizing: content-box;
+        @include clearfix();
+    }
+
+    .header {
+        width: 100%;
+        background-image: url("../img/fon_header.jpg");
+        background-size: cover;
+        padding: 2%;
+        box-sizing: border-box;
+
+        .logo-nav-sersh {
+            padding: 0 2% 0 2%;
+            box-sizing: border-box;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            .a-logo {
+                display: block;
+                width: 214px;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+            }
+
+            .img-logo {
+                display: inline-block;
+                fill: white;
+            }
+
+            .text-logo {
+                display: inline-block;
+                color: #ffffff;
+                letter-spacing: -0.9px;
+                @include textt(34px, white, $rr);
+                margin-left: 2px;
+                display: none;
+            }
+
+            .button-meny {
+                display: block;
+                width: 40px;
+                height: 40px;
+                border: 1px solid white;
+            }
+
+            .nav-header {
+                //display: flex;
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: center;
+                height: 58px;
+                width: 873px;
+                margin-top: -1px;
+                display: none;
+
+                .a-nav-header {
+                    display: inline-block;
+                    @include textt(14px, white, $ml);
+                    text-decoration: none;
+                    @include hover-and-activ-color(rgb(228, 152, 124), rgb(233, 83, 29));
+                }
+
+                .a-nav-header:nth-of-type(2) {
+                    margin-left: 29px;
+                }
+
+                .a-nav-header:nth-of-type(3) {
+                    margin-left: 28px;
+                }
+
+                .a-nav-header:nth-of-type(4) {
+                    margin-left: 28px;
+                }
+
+                .a-nav-header:nth-of-type(5) {
+                    margin-left: 26px;
+                }
+
+                .a-nav-header:nth-of-type(6) {
+                    margin-left: 28px;
+                }
+
+                .a-nav-header:nth-of-type(7) {
+                    margin-left: 28px;
+                }
+
+                .a-nav-header:nth-of-type(8) {
+                    margin-left: 29px;
+                }
+            }
+
+
+
+        }
+    }
+
+
+
+    .carousel.slide {
+        display: none;
+    }
+
+}

@@ -1,0 +1,38 @@
+.Purchase-Now {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 38px 344px 49px 373px;
+    background-color: #f4f5f8;
+    background-image: linear-gradient(to right, #211b19 0%, #4e3427 100%);
+  
+    .Purchase-Now-cont-next {
+      width: 545px;
+
+      .h2-Purchase-Now{margin: 0;}
+  
+      .text-brown {
+        @include textt(28px, #c7b299, $rr);
+      }
+  
+      .text-white {
+        @include textt(28px, #ffffff, $rr);
+      }
+  
+      .p-Purchase-Now {
+        margin: 8px 0 0 -3px;
+        @include textt(18px, #615855, $ml);
+      }
+    }
+  
+    .button-Purchase-Now {
+      @include button(170px, 5px, #998675);
+      min-height: 50px;
+      box-shadow: inset 0 -3px 0 #736357;
+      @include textt(14px, #fff, $reb);
+      border: none;
+      text-transform: uppercase;
+      @include  hover-and-activ-color-an-back-color(rgb(77, 10, 10), #c58351,white, #f5700b);
+    }
+
+  }

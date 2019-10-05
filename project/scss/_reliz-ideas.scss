@@ -1,0 +1,61 @@
+.Waxom-is-ealization {
+  width: $max;
+  box-sizing: border-box;
+  display: flex;
+  position: relative;
+  background-color: #fbfaf8;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 79px 542px 0 574px;
+  box-sizing: border-box;
+  z-index: 5;
+
+  .h2-Waxom-is-Realization {
+    text-align: center;
+    width: 769px;
+    @include textt(30px,  #555555, $rsb);
+    // margin-left: -3px;
+    margin: 0 auto;
+  }
+
+  .p2-Waxom-is-Realization {
+    //  margin-left: 2px;
+    margin: 16px auto;
+    text-align: center;
+    width: 769px;
+    line-height: 28px;
+    @include textt(16px,  #8c8c8c, $ml);
+  }
+
+  .imgcenter {
+    margin: 0 auto;
+    margin-top: 18px;
+    // margin-left: -3px;
+    background-color: #615855;
+    z-index: 20;
+  }
+
+  .imgcenter:hover {
+    z-index: 30;
+  }
+
+  .imgleft {
+    position: absolute;
+    bottom: 0px;
+    left: 343px;
+    background-color: #615855;
+  }
+  .imgleft:hover {
+    z-index: 30;
+  }
+
+  .imgright {
+    position: absolute;
+    bottom: 0px;
+    right: 314px;
+    background-color: #615855;
+  }
+  .imgright:hover {
+    z-index: 30;
+  }
+}
